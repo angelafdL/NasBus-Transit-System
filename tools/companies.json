@@ -1,0 +1,20 @@
+[
+ {
+  "companyId": 1,
+  "companyName": "DLTB Co.",
+  "busPrefix": "DB",
+  "contactInfo": "Not provided"
+ },
+ {
+  "companyId": 2,
+  "companyName": "Batman StarExpress Corporation",
+  "busPrefix": "BSB",
+  "contactInfo": "Not provided"
+ },
+ {
+  "companyId": 3,
+  "companyName": "St. Gabriel Bus Express Inc.",
+  "busPrefix": "SB",
+  "contactInfo": "Not provided"
+ }
+]

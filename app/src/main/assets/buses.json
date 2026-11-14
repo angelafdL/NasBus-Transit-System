@@ -1,0 +1,212 @@
+[
+ {
+  "busId": "DB-001",
+  "companyId": 1,
+  "busNumber": 1
+ },
+ {
+  "busId": "DB-002",
+  "companyId": 1,
+  "busNumber": 2
+ },
+ {
+  "busId": "DB-003",
+  "companyId": 1,
+  "busNumber": 3
+ },
+ {
+  "busId": "DB-004",
+  "companyId": 1,
+  "busNumber": 4
+ },
+ {
+  "busId": "DB-005",
+  "companyId": 1,
+  "busNumber": 5
+ },
+ {
+  "busId": "DB-006",
+  "companyId": 1,
+  "busNumber": 6
+ },
+ {
+  "busId": "DB-007",
+  "companyId": 1,
+  "busNumber": 7
+ },
+ {
+  "busId": "DB-008",
+  "companyId": 1,
+  "busNumber": 8
+ },
+ {
+  "busId": "DB-009",
+  "companyId": 1,
+  "busNumber": 9
+ },
+ {
+  "busId": "DB-010",
+  "companyId": 1,
+  "busNumber": 10
+ },
+ {
+  "busId": "DB-011",
+  "companyId": 1,
+  "busNumber": 11
+ },
+ {
+  "busId": "DB-012",
+  "companyId": 1,
+  "busNumber": 12
+ },
+ {
+  "busId": "BSB-001",
+  "companyId": 2,
+  "busNumber": 1
+ },
+ {
+  "busId": "BSB-002",
+  "companyId": 2,
+  "busNumber": 2
+ },
+ {
+  "busId": "BSB-003",
+  "companyId": 2,
+  "busNumber": 3
+ },
+ {
+  "busId": "BSB-004",
+  "companyId": 2,
+  "busNumber": 4
+ },
+ {
+  "busId": "BSB-005",
+  "companyId": 2,
+  "busNumber": 5
+ },
+ {
+  "busId": "BSB-006",
+  "companyId": 2,
+  "busNumber": 6
+ },
+ {
+  "busId": "BSB-007",
+  "companyId": 2,
+  "busNumber": 7
+ },
+ {
+  "busId": "BSB-008",
+  "companyId": 2,
+  "busNumber": 8
+ },
+ {
+  "busId": "BSB-009",
+  "companyId": 2,
+  "busNumber": 9
+ },
+ {
+  "busId": "BSB-010",
+  "companyId": 2,
+  "busNumber": 10
+ },
+ {
+  "busId": "BSB-011",
+  "companyId": 2,
+  "busNumber": 11
+ },
+ {
+  "busId": "BSB-012",
+  "companyId": 2,
+  "busNumber": 12
+ },
+ {
+  "busId": "BSB-013",
+  "companyId": 2,
+  "busNumber": 13
+ },
+ {
+  "busId": "BSB-014",
+  "companyId": 2,
+  "busNumber": 14
+ },
+ {
+  "busId": "BSB-015",
+  "companyId": 2,
+  "busNumber": 15
+ },
+ {
+  "busId": "BSB-016",
+  "companyId": 2,
+  "busNumber": 16
+ },
+ {
+  "busId": "BSB-017",
+  "companyId": 2,
+  "busNumber": 17
+ },
+ {
+  "busId": "BSB-018",
+  "companyId": 2,
+  "busNumber": 18
+ },
+ {
+  "busId": "BSB-019",
+  "companyId": 2,
+  "busNumber": 19
+ },
+ {
+  "busId": "BSB-020",
+  "companyId": 2,
+  "busNumber": 20
+ },
+ {
+  "busId": "BSB-021",
+  "companyId": 2,
+  "busNumber": 21
+ },
+ {
+  "busId": "BSB-022",
+  "companyId": 2,
+  "busNumber": 22
+ },
+ {
+  "busId": "BSB-023",
+  "companyId": 2,
+  "busNumber": 23
+ },
+ {
+  "busId": "BSB-024",
+  "companyId": 2,
+  "busNumber": 24
+ },
+ {
+  "busId": "SB-001",
+  "companyId": 3,
+  "busNumber": 1
+ },
+ {
+  "busId": "SB-002",
+  "companyId": 3,
+  "busNumber": 2
+ },
+ {
+  "busId": "SB-003",
+  "companyId": 3,
+  "busNumber": 3
+ },
+ {
+  "busId": "SB-004",
+  "companyId": 3,
+  "busNumber": 4
+ },
+ {
+  "busId": "SB-005",
+  "companyId": 3,
+  "busNumber": 5
+ },
+ {
+  "busId": "SB-006",
+  "companyId": 3,
+  "busNumber": 6
+ }
+]

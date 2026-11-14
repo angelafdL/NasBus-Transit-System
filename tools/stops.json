@@ -1,0 +1,1658 @@
+[
+ {
+  "stopId": 1,
+  "routeId": 1,
+  "stopName": "DLTB Co. Bus Terminal",
+  "latitude": 14.076384300756843,
+  "longitude": 120.63141479775717,
+  "sequenceOrder": 1,
+  "distanceFromOriginKm": 0.0
+ },
+ {
+  "stopId": 2,
+  "routeId": 1,
+  "stopName": "7-Eleven Lian",
+  "latitude": 14.039424445066292,
+  "longitude": 120.6520892664908,
+  "sequenceOrder": 2,
+  "distanceFromOriginKm": 6.01
+ },
+ {
+  "stopId": 3,
+  "routeId": 1,
+  "stopName": "Tuy Public Transport Terminal",
+  "latitude": 14.048391863900612,
+  "longitude": 120.69821217720241,
+  "sequenceOrder": 3,
+  "distanceFromOriginKm": 12.54
+ },
+ {
+  "stopId": 4,
+  "routeId": 1,
+  "stopName": "Nasugbu Stop",
+  "latitude": 14.058765379338745,
+  "longitude": 120.84482781388914,
+  "sequenceOrder": 4,
+  "distanceFromOriginKm": 32.94
+ },
+ {
+  "stopId": 5,
+  "routeId": 1,
+  "stopName": "Amuyong Stop",
+  "latitude": 14.066618384900996,
+  "longitude": 120.8527080920992,
+  "sequenceOrder": 5,
+  "distanceFromOriginKm": 34.5
+ },
+ {
+  "stopId": 6,
+  "routeId": 1,
+  "stopName": "Ayala Malls Serin",
+  "latitude": 14.112134211722276,
+  "longitude": 120.95904486397785,
+  "sequenceOrder": 6,
+  "distanceFromOriginKm": 50.63
+ },
+ {
+  "stopId": 7,
+  "routeId": 1,
+  "stopName": "Tagaytay Olivarez Plaza Bus Stop",
+  "latitude": 14.118099342963257,
+  "longitude": 120.96114836551729,
+  "sequenceOrder": 7,
+  "distanceFromOriginKm": 51.53
+ },
+ {
+  "stopId": 8,
+  "routeId": 1,
+  "stopName": "Silang Stop",
+  "latitude": 14.224234050015488,
+  "longitude": 120.96878223154629,
+  "sequenceOrder": 8,
+  "distanceFromOriginKm": 66.74
+ },
+ {
+  "stopId": 9,
+  "routeId": 1,
+  "stopName": "Robinsons Pala-Pala",
+  "latitude": 14.300184394626028,
+  "longitude": 120.9544503014791,
+  "sequenceOrder": 9,
+  "distanceFromOriginKm": 77.79
+ },
+ {
+  "stopId": 10,
+  "routeId": 1,
+  "stopName": "Waltermart Dasmarinas",
+  "latitude": 14.324680325944282,
+  "longitude": 120.94094402532615,
+  "sequenceOrder": 10,
+  "distanceFromOriginKm": 81.76
+ },
+ {
+  "stopId": 11,
+  "routeId": 1,
+  "stopName": "The District Imus",
+  "latitude": 14.37044505065896,
+  "longitude": 120.93866752335934,
+  "sequenceOrder": 11,
+  "distanceFromOriginKm": 88.31
+ },
+ {
+  "stopId": 12,
+  "routeId": 1,
+  "stopName": "SM City Bacoor",
+  "latitude": 14.444651252312346,
+  "longitude": 120.95255424285187,
+  "sequenceOrder": 12,
+  "distanceFromOriginKm": 99.1
+ },
+ {
+  "stopId": 13,
+  "routeId": 1,
+  "stopName": "Talaba Elementary School",
+  "latitude": 14.460524240615413,
+  "longitude": 120.9606711203826,
+  "sequenceOrder": 13,
+  "distanceFromOriginKm": 101.63
+ },
+ {
+  "stopId": 14,
+  "routeId": 1,
+  "stopName": "Longos",
+  "latitude": 14.46592474106398,
+  "longitude": 120.96824210821126,
+  "sequenceOrder": 14,
+  "distanceFromOriginKm": 102.93
+ },
+ {
+  "stopId": 15,
+  "routeId": 1,
+  "stopName": "Parañaque Integrated Terminal Exchange (PITX)",
+  "latitude": 14.507897627625834,
+  "longitude": 120.9912471231086,
+  "sequenceOrder": 15,
+  "distanceFromOriginKm": 109.73
+ },
+ {
+  "stopId": 16,
+  "routeId": 1,
+  "stopName": "Double Dragon Plaza",
+  "latitude": 14.536591330774359,
+  "longitude": 120.99253789225585,
+  "sequenceOrder": 16,
+  "distanceFromOriginKm": 113.84
+ },
+ {
+  "stopId": 17,
+  "routeId": 1,
+  "stopName": "F.B. Harrison St.",
+  "latitude": 14.54617009058317,
+  "longitude": 120.99387111238178,
+  "sequenceOrder": 17,
+  "distanceFromOriginKm": 115.22
+ },
+ {
+  "stopId": 18,
+  "routeId": 1,
+  "stopName": "DLTB Bus Company (LRT Gil Puyat)",
+  "latitude": 14.554786180067783,
+  "longitude": 120.99642983872397,
+  "sequenceOrder": 18,
+  "distanceFromOriginKm": 116.5
+ },
+ {
+  "stopId": 19,
+  "routeId": 2,
+  "stopName": "DLTB Bus Company (LRT Gil Puyat)",
+  "latitude": 14.554786180067783,
+  "longitude": 120.99642983872397,
+  "sequenceOrder": 1,
+  "distanceFromOriginKm": 0.0
+ },
+ {
+  "stopId": 20,
+  "routeId": 2,
+  "stopName": "F.B. Harrison St.",
+  "latitude": 14.54617009058317,
+  "longitude": 120.99387111238178,
+  "sequenceOrder": 2,
+  "distanceFromOriginKm": 1.28
+ },
+ {
+  "stopId": 21,
+  "routeId": 2,
+  "stopName": "Double Dragon Plaza",
+  "latitude": 14.536591330774359,
+  "longitude": 120.99253789225585,
+  "sequenceOrder": 3,
+  "distanceFromOriginKm": 2.66
+ },
+ {
+  "stopId": 22,
+  "routeId": 2,
+  "stopName": "Parañaque Integrated Terminal Exchange (PITX)",
+  "latitude": 14.507897627625834,
+  "longitude": 120.9912471231086,
+  "sequenceOrder": 4,
+  "distanceFromOriginKm": 6.77
+ },
+ {
+  "stopId": 23,
+  "routeId": 2,
+  "stopName": "Longos",
+  "latitude": 14.46592474106398,
+  "longitude": 120.96824210821126,
+  "sequenceOrder": 5,
+  "distanceFromOriginKm": 13.57
+ },
+ {
+  "stopId": 24,
+  "routeId": 2,
+  "stopName": "Talaba Elementary School",
+  "latitude": 14.460524240615413,
+  "longitude": 120.9606711203826,
+  "sequenceOrder": 6,
+  "distanceFromOriginKm": 14.87
+ },
+ {
+  "stopId": 25,
+  "routeId": 2,
+  "stopName": "SM City Bacoor",
+  "latitude": 14.444651252312346,
+  "longitude": 120.95255424285187,
+  "sequenceOrder": 7,
+  "distanceFromOriginKm": 17.4
+ },
+ {
+  "stopId": 26,
+  "routeId": 2,
+  "stopName": "The District Imus",
+  "latitude": 14.37044505065896,
+  "longitude": 120.93866752335934,
+  "sequenceOrder": 8,
+  "distanceFromOriginKm": 28.19
+ },
+ {
+  "stopId": 27,
+  "routeId": 2,
+  "stopName": "Waltermart Dasmarinas",
+  "latitude": 14.324680325944282,
+  "longitude": 120.94094402532615,
+  "sequenceOrder": 9,
+  "distanceFromOriginKm": 34.74
+ },
+ {
+  "stopId": 28,
+  "routeId": 2,
+  "stopName": "Robinsons Pala-Pala",
+  "latitude": 14.300184394626028,
+  "longitude": 120.9544503014791,
+  "sequenceOrder": 10,
+  "distanceFromOriginKm": 38.71
+ },
+ {
+  "stopId": 29,
+  "routeId": 2,
+  "stopName": "Silang Stop",
+  "latitude": 14.224234050015488,
+  "longitude": 120.96878223154629,
+  "sequenceOrder": 11,
+  "distanceFromOriginKm": 49.76
+ },
+ {
+  "stopId": 30,
+  "routeId": 2,
+  "stopName": "Tagaytay Olivarez Plaza Bus Stop",
+  "latitude": 14.118099342963257,
+  "longitude": 120.96114836551729,
+  "sequenceOrder": 12,
+  "distanceFromOriginKm": 64.97
+ },
+ {
+  "stopId": 31,
+  "routeId": 2,
+  "stopName": "Ayala Malls Serin",
+  "latitude": 14.112134211722276,
+  "longitude": 120.95904486397785,
+  "sequenceOrder": 13,
+  "distanceFromOriginKm": 65.87
+ },
+ {
+  "stopId": 32,
+  "routeId": 2,
+  "stopName": "Amuyong Stop",
+  "latitude": 14.066618384900996,
+  "longitude": 120.8527080920992,
+  "sequenceOrder": 14,
+  "distanceFromOriginKm": 82.0
+ },
+ {
+  "stopId": 33,
+  "routeId": 2,
+  "stopName": "Nasugbu Stop",
+  "latitude": 14.058765379338745,
+  "longitude": 120.84482781388914,
+  "sequenceOrder": 15,
+  "distanceFromOriginKm": 83.56
+ },
+ {
+  "stopId": 34,
+  "routeId": 2,
+  "stopName": "Tuy Public Transport Terminal",
+  "latitude": 14.048391863900612,
+  "longitude": 120.69821217720241,
+  "sequenceOrder": 16,
+  "distanceFromOriginKm": 103.96
+ },
+ {
+  "stopId": 35,
+  "routeId": 2,
+  "stopName": "7-Eleven Lian",
+  "latitude": 14.039424445066292,
+  "longitude": 120.6520892664908,
+  "sequenceOrder": 17,
+  "distanceFromOriginKm": 110.49
+ },
+ {
+  "stopId": 36,
+  "routeId": 2,
+  "stopName": "DLTB Co. Bus Terminal",
+  "latitude": 14.076384300756843,
+  "longitude": 120.63141479775717,
+  "sequenceOrder": 18,
+  "distanceFromOriginKm": 116.5
+ },
+ {
+  "stopId": 37,
+  "routeId": 3,
+  "stopName": "DLTB Co. Bus Terminal",
+  "latitude": 14.076384300756843,
+  "longitude": 120.63141479775717,
+  "sequenceOrder": 1,
+  "distanceFromOriginKm": 0.0
+ },
+ {
+  "stopId": 38,
+  "routeId": 3,
+  "stopName": "7-Eleven Lian",
+  "latitude": 14.039424445066292,
+  "longitude": 120.6520892664908,
+  "sequenceOrder": 2,
+  "distanceFromOriginKm": 5.88
+ },
+ {
+  "stopId": 39,
+  "routeId": 3,
+  "stopName": "Tuy Public Transport Terminal",
+  "latitude": 14.048391863900612,
+  "longitude": 120.69821217720241,
+  "sequenceOrder": 3,
+  "distanceFromOriginKm": 12.26
+ },
+ {
+  "stopId": 40,
+  "routeId": 3,
+  "stopName": "Nasugbu Stop",
+  "latitude": 14.058765379338745,
+  "longitude": 120.84482781388914,
+  "sequenceOrder": 4,
+  "distanceFromOriginKm": 32.19
+ },
+ {
+  "stopId": 41,
+  "routeId": 3,
+  "stopName": "Amuyong Stop",
+  "latitude": 14.066618384900996,
+  "longitude": 120.8527080920992,
+  "sequenceOrder": 5,
+  "distanceFromOriginKm": 33.73
+ },
+ {
+  "stopId": 42,
+  "routeId": 3,
+  "stopName": "Ayala Malls Serin",
+  "latitude": 14.112134211722276,
+  "longitude": 120.95904486397785,
+  "sequenceOrder": 6,
+  "distanceFromOriginKm": 49.49
+ },
+ {
+  "stopId": 43,
+  "routeId": 3,
+  "stopName": "Tagaytay Olivarez Plaza Bus Stop",
+  "latitude": 14.118099342963257,
+  "longitude": 120.96114836551729,
+  "sequenceOrder": 7,
+  "distanceFromOriginKm": 50.37
+ },
+ {
+  "stopId": 44,
+  "routeId": 3,
+  "stopName": "Silang Stop",
+  "latitude": 14.224234050015488,
+  "longitude": 120.96878223154629,
+  "sequenceOrder": 8,
+  "distanceFromOriginKm": 65.24
+ },
+ {
+  "stopId": 45,
+  "routeId": 3,
+  "stopName": "Robinsons Pala-Pala",
+  "latitude": 14.300184394626028,
+  "longitude": 120.9544503014791,
+  "sequenceOrder": 9,
+  "distanceFromOriginKm": 76.03
+ },
+ {
+  "stopId": 46,
+  "routeId": 3,
+  "stopName": "Waltermart Dasmarinas",
+  "latitude": 14.324680325944282,
+  "longitude": 120.94094402532615,
+  "sequenceOrder": 10,
+  "distanceFromOriginKm": 79.92
+ },
+ {
+  "stopId": 47,
+  "routeId": 3,
+  "stopName": "The District Imus",
+  "latitude": 14.37044505065896,
+  "longitude": 120.93866752335934,
+  "sequenceOrder": 11,
+  "distanceFromOriginKm": 86.32
+ },
+ {
+  "stopId": 48,
+  "routeId": 3,
+  "stopName": "SM City Bacoor",
+  "latitude": 14.444651252312346,
+  "longitude": 120.95255424285187,
+  "sequenceOrder": 12,
+  "distanceFromOriginKm": 96.86
+ },
+ {
+  "stopId": 49,
+  "routeId": 3,
+  "stopName": "Talaba Elementary School",
+  "latitude": 14.460524240615413,
+  "longitude": 120.9606711203826,
+  "sequenceOrder": 13,
+  "distanceFromOriginKm": 99.34
+ },
+ {
+  "stopId": 50,
+  "routeId": 3,
+  "stopName": "Longos",
+  "latitude": 14.46592474106398,
+  "longitude": 120.96824210821126,
+  "sequenceOrder": 14,
+  "distanceFromOriginKm": 100.61
+ },
+ {
+  "stopId": 51,
+  "routeId": 3,
+  "stopName": "Airport Road",
+  "latitude": 14.527539108168732,
+  "longitude": 120.99368456382898,
+  "sequenceOrder": 15,
+  "distanceFromOriginKm": 109.89
+ },
+ {
+  "stopId": 52,
+  "routeId": 3,
+  "stopName": "Baclaran Market",
+  "latitude": 14.532202497600482,
+  "longitude": 120.99503224261458,
+  "sequenceOrder": 16,
+  "distanceFromOriginKm": 110.57
+ },
+ {
+  "stopId": 53,
+  "routeId": 3,
+  "stopName": "DLTB Bus Company (Pasay)",
+  "latitude": 14.53790285981451,
+  "longitude": 121.00384254758949,
+  "sequenceOrder": 17,
+  "distanceFromOriginKm": 112.0
+ },
+ {
+  "stopId": 54,
+  "routeId": 4,
+  "stopName": "DLTB Bus Company (Pasay)",
+  "latitude": 14.53790285981451,
+  "longitude": 121.00384254758949,
+  "sequenceOrder": 1,
+  "distanceFromOriginKm": 0.0
+ },
+ {
+  "stopId": 55,
+  "routeId": 4,
+  "stopName": "Baclaran Market",
+  "latitude": 14.532202497600482,
+  "longitude": 120.99503224261458,
+  "sequenceOrder": 2,
+  "distanceFromOriginKm": 1.43
+ },
+ {
+  "stopId": 56,
+  "routeId": 4,
+  "stopName": "Airport Road",
+  "latitude": 14.527539108168732,
+  "longitude": 120.99368456382898,
+  "sequenceOrder": 3,
+  "distanceFromOriginKm": 2.11
+ },
+ {
+  "stopId": 57,
+  "routeId": 4,
+  "stopName": "Longos",
+  "latitude": 14.46592474106398,
+  "longitude": 120.96824210821126,
+  "sequenceOrder": 4,
+  "distanceFromOriginKm": 11.39
+ },
+ {
+  "stopId": 58,
+  "routeId": 4,
+  "stopName": "Talaba Elementary School",
+  "latitude": 14.460524240615413,
+  "longitude": 120.9606711203826,
+  "sequenceOrder": 5,
+  "distanceFromOriginKm": 12.66
+ },
+ {
+  "stopId": 59,
+  "routeId": 4,
+  "stopName": "SM City Bacoor",
+  "latitude": 14.444651252312346,
+  "longitude": 120.95255424285187,
+  "sequenceOrder": 6,
+  "distanceFromOriginKm": 15.14
+ },
+ {
+  "stopId": 60,
+  "routeId": 4,
+  "stopName": "The District Imus",
+  "latitude": 14.37044505065896,
+  "longitude": 120.93866752335934,
+  "sequenceOrder": 7,
+  "distanceFromOriginKm": 25.68
+ },
+ {
+  "stopId": 61,
+  "routeId": 4,
+  "stopName": "Waltermart Dasmarinas",
+  "latitude": 14.324680325944282,
+  "longitude": 120.94094402532615,
+  "sequenceOrder": 8,
+  "distanceFromOriginKm": 32.08
+ },
+ {
+  "stopId": 62,
+  "routeId": 4,
+  "stopName": "Robinsons Pala-Pala",
+  "latitude": 14.300184394626028,
+  "longitude": 120.9544503014791,
+  "sequenceOrder": 9,
+  "distanceFromOriginKm": 35.97
+ },
+ {
+  "stopId": 63,
+  "routeId": 4,
+  "stopName": "Silang Stop",
+  "latitude": 14.224234050015488,
+  "longitude": 120.96878223154629,
+  "sequenceOrder": 10,
+  "distanceFromOriginKm": 46.76
+ },
+ {
+  "stopId": 64,
+  "routeId": 4,
+  "stopName": "Tagaytay Olivarez Plaza Bus Stop",
+  "latitude": 14.118099342963257,
+  "longitude": 120.96114836551729,
+  "sequenceOrder": 11,
+  "distanceFromOriginKm": 61.63
+ },
+ {
+  "stopId": 65,
+  "routeId": 4,
+  "stopName": "Ayala Malls Serin",
+  "latitude": 14.112134211722276,
+  "longitude": 120.95904486397785,
+  "sequenceOrder": 12,
+  "distanceFromOriginKm": 62.51
+ },
+ {
+  "stopId": 66,
+  "routeId": 4,
+  "stopName": "Amuyong Stop",
+  "latitude": 14.066618384900996,
+  "longitude": 120.8527080920992,
+  "sequenceOrder": 13,
+  "distanceFromOriginKm": 78.27
+ },
+ {
+  "stopId": 67,
+  "routeId": 4,
+  "stopName": "Nasugbu Stop",
+  "latitude": 14.058765379338745,
+  "longitude": 120.84482781388914,
+  "sequenceOrder": 14,
+  "distanceFromOriginKm": 79.81
+ },
+ {
+  "stopId": 68,
+  "routeId": 4,
+  "stopName": "Tuy Public Transport Terminal",
+  "latitude": 14.048391863900612,
+  "longitude": 120.69821217720241,
+  "sequenceOrder": 15,
+  "distanceFromOriginKm": 99.74
+ },
+ {
+  "stopId": 69,
+  "routeId": 4,
+  "stopName": "7-Eleven Lian",
+  "latitude": 14.039424445066292,
+  "longitude": 120.6520892664908,
+  "sequenceOrder": 16,
+  "distanceFromOriginKm": 106.12
+ },
+ {
+  "stopId": 70,
+  "routeId": 4,
+  "stopName": "DLTB Co. Bus Terminal",
+  "latitude": 14.076384300756843,
+  "longitude": 120.63141479775717,
+  "sequenceOrder": 17,
+  "distanceFromOriginKm": 112.0
+ },
+ {
+  "stopId": 71,
+  "routeId": 5,
+  "stopName": "Waltermart Nasugbu Terminal",
+  "latitude": 14.056955511132069,
+  "longitude": 120.63928054593644,
+  "sequenceOrder": 1,
+  "distanceFromOriginKm": 0.0
+ },
+ {
+  "stopId": 72,
+  "routeId": 5,
+  "stopName": "Dunkin’ Donuts Nasugbu",
+  "latitude": 14.071382353146372,
+  "longitude": 120.63249384396602,
+  "sequenceOrder": 2,
+  "distanceFromOriginKm": 2.22
+ },
+ {
+  "stopId": 73,
+  "routeId": 5,
+  "stopName": "Looc Talipapa Market",
+  "latitude": 14.164236351090087,
+  "longitude": 120.62931693962646,
+  "sequenceOrder": 3,
+  "distanceFromOriginKm": 15.24
+ },
+ {
+  "stopId": 74,
+  "routeId": 5,
+  "stopName": "Ternate-Nasugbu Road",
+  "latitude": 14.177766725007025,
+  "longitude": 120.61889110852246,
+  "sequenceOrder": 4,
+  "distanceFromOriginKm": 17.6
+ },
+ {
+  "stopId": 75,
+  "routeId": 5,
+  "stopName": "Kaybiang Tunnel",
+  "latitude": 14.233967135102983,
+  "longitude": 120.6311527459746,
+  "sequenceOrder": 5,
+  "distanceFromOriginKm": 25.65
+ },
+ {
+  "stopId": 76,
+  "routeId": 5,
+  "stopName": "Ternate Stop",
+  "latitude": 14.283987532401742,
+  "longitude": 120.72024902993587,
+  "sequenceOrder": 6,
+  "distanceFromOriginKm": 39.63
+ },
+ {
+  "stopId": 77,
+  "routeId": 5,
+  "stopName": "Maragondon Stop",
+  "latitude": 14.2762285246536,
+  "longitude": 120.73714158231088,
+  "sequenceOrder": 7,
+  "distanceFromOriginKm": 42.16
+ },
+ {
+  "stopId": 78,
+  "routeId": 5,
+  "stopName": "Alfamart Muzon",
+  "latitude": 14.291583131314061,
+  "longitude": 120.7518311749829,
+  "sequenceOrder": 8,
+  "distanceFromOriginKm": 45.1
+ },
+ {
+  "stopId": 79,
+  "routeId": 5,
+  "stopName": "Naic Stop",
+  "latitude": 14.322496719717018,
+  "longitude": 120.77173274012094,
+  "sequenceOrder": 9,
+  "distanceFromOriginKm": 50.2
+ },
+ {
+  "stopId": 80,
+  "routeId": 5,
+  "stopName": "Puregold Tanza",
+  "latitude": 14.393298558463771,
+  "longitude": 120.85474813971277,
+  "sequenceOrder": 10,
+  "distanceFromOriginKm": 65.21
+ },
+ {
+  "stopId": 81,
+  "routeId": 5,
+  "stopName": "Gahak Stop",
+  "latitude": 14.440710148000026,
+  "longitude": 120.91115349887451,
+  "sequenceOrder": 11,
+  "distanceFromOriginKm": 75.34
+ },
+ {
+  "stopId": 82,
+  "routeId": 5,
+  "stopName": "Tirona Stop",
+  "latitude": 14.446972453231094,
+  "longitude": 120.91567388691207,
+  "sequenceOrder": 12,
+  "distanceFromOriginKm": 76.41
+ },
+ {
+  "stopId": 83,
+  "routeId": 5,
+  "stopName": "Parañaque Integrated Terminal Exchange (PITX)",
+  "latitude": 14.507897627625834,
+  "longitude": 120.9912471231086,
+  "sequenceOrder": 13,
+  "distanceFromOriginKm": 89.75
+ },
+ {
+  "stopId": 84,
+  "routeId": 6,
+  "stopName": "Parañaque Integrated Terminal Exchange (PITX)",
+  "latitude": 14.507897627625834,
+  "longitude": 120.9912471231086,
+  "sequenceOrder": 1,
+  "distanceFromOriginKm": 0.0
+ },
+ {
+  "stopId": 85,
+  "routeId": 6,
+  "stopName": "Tirona Stop",
+  "latitude": 14.446972453231094,
+  "longitude": 120.91567388691207,
+  "sequenceOrder": 2,
+  "distanceFromOriginKm": 13.34
+ },
+ {
+  "stopId": 86,
+  "routeId": 6,
+  "stopName": "Gahak Stop",
+  "latitude": 14.440710148000026,
+  "longitude": 120.91115349887451,
+  "sequenceOrder": 3,
+  "distanceFromOriginKm": 14.41
+ },
+ {
+  "stopId": 87,
+  "routeId": 6,
+  "stopName": "Puregold Tanza",
+  "latitude": 14.393298558463771,
+  "longitude": 120.85474813971277,
+  "sequenceOrder": 4,
+  "distanceFromOriginKm": 24.54
+ },
+ {
+  "stopId": 88,
+  "routeId": 6,
+  "stopName": "Naic Stop",
+  "latitude": 14.322496719717018,
+  "longitude": 120.77173274012094,
+  "sequenceOrder": 5,
+  "distanceFromOriginKm": 39.55
+ },
+ {
+  "stopId": 89,
+  "routeId": 6,
+  "stopName": "Alfamart Muzon",
+  "latitude": 14.291583131314061,
+  "longitude": 120.7518311749829,
+  "sequenceOrder": 6,
+  "distanceFromOriginKm": 44.65
+ },
+ {
+  "stopId": 90,
+  "routeId": 6,
+  "stopName": "Maragondon Stop",
+  "latitude": 14.2762285246536,
+  "longitude": 120.73714158231088,
+  "sequenceOrder": 7,
+  "distanceFromOriginKm": 47.59
+ },
+ {
+  "stopId": 91,
+  "routeId": 6,
+  "stopName": "Ternate Stop",
+  "latitude": 14.283987532401742,
+  "longitude": 120.72024902993587,
+  "sequenceOrder": 8,
+  "distanceFromOriginKm": 50.12
+ },
+ {
+  "stopId": 92,
+  "routeId": 6,
+  "stopName": "Kaybiang Tunnel",
+  "latitude": 14.233967135102983,
+  "longitude": 120.6311527459746,
+  "sequenceOrder": 9,
+  "distanceFromOriginKm": 64.1
+ },
+ {
+  "stopId": 93,
+  "routeId": 6,
+  "stopName": "Ternate-Nasugbu Road",
+  "latitude": 14.177766725007025,
+  "longitude": 120.61889110852246,
+  "sequenceOrder": 10,
+  "distanceFromOriginKm": 72.15
+ },
+ {
+  "stopId": 94,
+  "routeId": 6,
+  "stopName": "Looc Talipapa Market",
+  "latitude": 14.164236351090087,
+  "longitude": 120.62931693962646,
+  "sequenceOrder": 11,
+  "distanceFromOriginKm": 74.51
+ },
+ {
+  "stopId": 95,
+  "routeId": 6,
+  "stopName": "Dunkin’ Donuts Nasugbu",
+  "latitude": 14.071382353146372,
+  "longitude": 120.63249384396602,
+  "sequenceOrder": 12,
+  "distanceFromOriginKm": 87.53
+ },
+ {
+  "stopId": 96,
+  "routeId": 6,
+  "stopName": "Waltermart Nasugbu Terminal",
+  "latitude": 14.056955511132069,
+  "longitude": 120.63928054593644,
+  "sequenceOrder": 13,
+  "distanceFromOriginKm": 89.75
+ },
+ {
+  "stopId": 97,
+  "routeId": 7,
+  "stopName": "BSC Bus Terminal Nasugbu",
+  "latitude": 14.07299620514779,
+  "longitude": 120.63195443866262,
+  "sequenceOrder": 1,
+  "distanceFromOriginKm": 0.0
+ },
+ {
+  "stopId": 98,
+  "routeId": 7,
+  "stopName": "7-Eleven Lian",
+  "latitude": 14.039424445066292,
+  "longitude": 120.6520892664908,
+  "sequenceOrder": 2,
+  "distanceFromOriginKm": 5.44
+ },
+ {
+  "stopId": 99,
+  "routeId": 7,
+  "stopName": "Tuy Public Transport Terminal",
+  "latitude": 14.048391863900612,
+  "longitude": 120.69821217720241,
+  "sequenceOrder": 3,
+  "distanceFromOriginKm": 11.83
+ },
+ {
+  "stopId": 100,
+  "routeId": 7,
+  "stopName": "Nasugbu Stop",
+  "latitude": 14.058765379338745,
+  "longitude": 120.84482781388914,
+  "sequenceOrder": 4,
+  "distanceFromOriginKm": 31.8
+ },
+ {
+  "stopId": 101,
+  "routeId": 7,
+  "stopName": "Amuyong Stop",
+  "latitude": 14.066618384900996,
+  "longitude": 120.8527080920992,
+  "sequenceOrder": 5,
+  "distanceFromOriginKm": 33.34
+ },
+ {
+  "stopId": 102,
+  "routeId": 7,
+  "stopName": "Ayala Malls Serin",
+  "latitude": 14.112134211722276,
+  "longitude": 120.95904486397785,
+  "sequenceOrder": 6,
+  "distanceFromOriginKm": 49.13
+ },
+ {
+  "stopId": 103,
+  "routeId": 7,
+  "stopName": "Tagaytay Olivarez Plaza Bus Stop",
+  "latitude": 14.118099342963257,
+  "longitude": 120.96114836551729,
+  "sequenceOrder": 7,
+  "distanceFromOriginKm": 50.01
+ },
+ {
+  "stopId": 104,
+  "routeId": 7,
+  "stopName": "Silang Stop",
+  "latitude": 14.224234050015488,
+  "longitude": 120.96878223154629,
+  "sequenceOrder": 8,
+  "distanceFromOriginKm": 64.91
+ },
+ {
+  "stopId": 105,
+  "routeId": 7,
+  "stopName": "Robinsons Pala-Pala",
+  "latitude": 14.300184394626028,
+  "longitude": 120.9544503014791,
+  "sequenceOrder": 9,
+  "distanceFromOriginKm": 75.72
+ },
+ {
+  "stopId": 106,
+  "routeId": 7,
+  "stopName": "Waltermart Dasmarinas",
+  "latitude": 14.324680325944282,
+  "longitude": 120.94094402532615,
+  "sequenceOrder": 10,
+  "distanceFromOriginKm": 79.61
+ },
+ {
+  "stopId": 107,
+  "routeId": 7,
+  "stopName": "The District Imus",
+  "latitude": 14.37044505065896,
+  "longitude": 120.93866752335934,
+  "sequenceOrder": 11,
+  "distanceFromOriginKm": 86.03
+ },
+ {
+  "stopId": 108,
+  "routeId": 7,
+  "stopName": "SM City Bacoor",
+  "latitude": 14.444651252312346,
+  "longitude": 120.95255424285187,
+  "sequenceOrder": 12,
+  "distanceFromOriginKm": 96.59
+ },
+ {
+  "stopId": 109,
+  "routeId": 7,
+  "stopName": "Talaba Elementary School",
+  "latitude": 14.460524240615413,
+  "longitude": 120.9606711203826,
+  "sequenceOrder": 13,
+  "distanceFromOriginKm": 99.07
+ },
+ {
+  "stopId": 110,
+  "routeId": 7,
+  "stopName": "Longos",
+  "latitude": 14.46592474106398,
+  "longitude": 120.96824210821126,
+  "sequenceOrder": 14,
+  "distanceFromOriginKm": 100.35
+ },
+ {
+  "stopId": 111,
+  "routeId": 7,
+  "stopName": "Parañaque Integrated Terminal Exchange (PITX)",
+  "latitude": 14.507897627625834,
+  "longitude": 120.9912471231086,
+  "sequenceOrder": 15,
+  "distanceFromOriginKm": 107.0
+ },
+ {
+  "stopId": 112,
+  "routeId": 8,
+  "stopName": "Parañaque Integrated Terminal Exchange (PITX)",
+  "latitude": 14.507897627625834,
+  "longitude": 120.9912471231086,
+  "sequenceOrder": 1,
+  "distanceFromOriginKm": 0.0
+ },
+ {
+  "stopId": 113,
+  "routeId": 8,
+  "stopName": "Longos",
+  "latitude": 14.46592474106398,
+  "longitude": 120.96824210821126,
+  "sequenceOrder": 2,
+  "distanceFromOriginKm": 6.65
+ },
+ {
+  "stopId": 114,
+  "routeId": 8,
+  "stopName": "Talaba Elementary School",
+  "latitude": 14.460524240615413,
+  "longitude": 120.9606711203826,
+  "sequenceOrder": 3,
+  "distanceFromOriginKm": 7.93
+ },
+ {
+  "stopId": 115,
+  "routeId": 8,
+  "stopName": "SM City Bacoor",
+  "latitude": 14.444651252312346,
+  "longitude": 120.95255424285187,
+  "sequenceOrder": 4,
+  "distanceFromOriginKm": 10.41
+ },
+ {
+  "stopId": 116,
+  "routeId": 8,
+  "stopName": "The District Imus",
+  "latitude": 14.37044505065896,
+  "longitude": 120.93866752335934,
+  "sequenceOrder": 5,
+  "distanceFromOriginKm": 20.97
+ },
+ {
+  "stopId": 117,
+  "routeId": 8,
+  "stopName": "Waltermart Dasmarinas",
+  "latitude": 14.324680325944282,
+  "longitude": 120.94094402532615,
+  "sequenceOrder": 6,
+  "distanceFromOriginKm": 27.39
+ },
+ {
+  "stopId": 118,
+  "routeId": 8,
+  "stopName": "Robinsons Pala-Pala",
+  "latitude": 14.300184394626028,
+  "longitude": 120.9544503014791,
+  "sequenceOrder": 7,
+  "distanceFromOriginKm": 31.28
+ },
+ {
+  "stopId": 119,
+  "routeId": 8,
+  "stopName": "Silang Stop",
+  "latitude": 14.224234050015488,
+  "longitude": 120.96878223154629,
+  "sequenceOrder": 8,
+  "distanceFromOriginKm": 42.09
+ },
+ {
+  "stopId": 120,
+  "routeId": 8,
+  "stopName": "Tagaytay Olivarez Plaza Bus Stop",
+  "latitude": 14.118099342963257,
+  "longitude": 120.96114836551729,
+  "sequenceOrder": 9,
+  "distanceFromOriginKm": 56.99
+ },
+ {
+  "stopId": 121,
+  "routeId": 8,
+  "stopName": "Ayala Malls Serin",
+  "latitude": 14.112134211722276,
+  "longitude": 120.95904486397785,
+  "sequenceOrder": 10,
+  "distanceFromOriginKm": 57.87
+ },
+ {
+  "stopId": 122,
+  "routeId": 8,
+  "stopName": "Amuyong Stop",
+  "latitude": 14.066618384900996,
+  "longitude": 120.8527080920992,
+  "sequenceOrder": 11,
+  "distanceFromOriginKm": 73.66
+ },
+ {
+  "stopId": 123,
+  "routeId": 8,
+  "stopName": "Nasugbu Stop",
+  "latitude": 14.058765379338745,
+  "longitude": 120.84482781388914,
+  "sequenceOrder": 12,
+  "distanceFromOriginKm": 75.2
+ },
+ {
+  "stopId": 124,
+  "routeId": 8,
+  "stopName": "Tuy Public Transport Terminal",
+  "latitude": 14.048391863900612,
+  "longitude": 120.69821217720241,
+  "sequenceOrder": 13,
+  "distanceFromOriginKm": 95.17
+ },
+ {
+  "stopId": 125,
+  "routeId": 8,
+  "stopName": "7-Eleven Lian",
+  "latitude": 14.039424445066292,
+  "longitude": 120.6520892664908,
+  "sequenceOrder": 14,
+  "distanceFromOriginKm": 101.56
+ },
+ {
+  "stopId": 126,
+  "routeId": 8,
+  "stopName": "BSC Bus Terminal Nasugbu",
+  "latitude": 14.07299620514779,
+  "longitude": 120.63195443866262,
+  "sequenceOrder": 15,
+  "distanceFromOriginKm": 107.0
+ },
+ {
+  "stopId": 127,
+  "routeId": 9,
+  "stopName": "BSC Bus Terminal Nasugbu",
+  "latitude": 14.07299620514779,
+  "longitude": 120.63195443866262,
+  "sequenceOrder": 1,
+  "distanceFromOriginKm": 0.0
+ },
+ {
+  "stopId": 128,
+  "routeId": 9,
+  "stopName": "7-Eleven Lian",
+  "latitude": 14.039424445066292,
+  "longitude": 120.6520892664908,
+  "sequenceOrder": 2,
+  "distanceFromOriginKm": 5.11
+ },
+ {
+  "stopId": 129,
+  "routeId": 9,
+  "stopName": "Tuy Public Transport Terminal",
+  "latitude": 14.048391863900612,
+  "longitude": 120.69821217720241,
+  "sequenceOrder": 3,
+  "distanceFromOriginKm": 11.12
+ },
+ {
+  "stopId": 130,
+  "routeId": 9,
+  "stopName": "Nasugbu Stop",
+  "latitude": 14.058765379338745,
+  "longitude": 120.84482781388914,
+  "sequenceOrder": 4,
+  "distanceFromOriginKm": 29.9
+ },
+ {
+  "stopId": 131,
+  "routeId": 9,
+  "stopName": "Amuyong Stop",
+  "latitude": 14.066618384900996,
+  "longitude": 120.8527080920992,
+  "sequenceOrder": 5,
+  "distanceFromOriginKm": 31.34
+ },
+ {
+  "stopId": 132,
+  "routeId": 9,
+  "stopName": "Ayala Malls Serin",
+  "latitude": 14.112134211722276,
+  "longitude": 120.95904486397785,
+  "sequenceOrder": 6,
+  "distanceFromOriginKm": 46.18
+ },
+ {
+  "stopId": 133,
+  "routeId": 9,
+  "stopName": "Tagaytay Olivarez Plaza Bus Stop",
+  "latitude": 14.118099342963257,
+  "longitude": 120.96114836551729,
+  "sequenceOrder": 7,
+  "distanceFromOriginKm": 47.01
+ },
+ {
+  "stopId": 134,
+  "routeId": 9,
+  "stopName": "Silang Stop",
+  "latitude": 14.224234050015488,
+  "longitude": 120.96878223154629,
+  "sequenceOrder": 8,
+  "distanceFromOriginKm": 61.02
+ },
+ {
+  "stopId": 135,
+  "routeId": 9,
+  "stopName": "Robinsons Pala-Pala",
+  "latitude": 14.300184394626028,
+  "longitude": 120.9544503014791,
+  "sequenceOrder": 9,
+  "distanceFromOriginKm": 71.19
+ },
+ {
+  "stopId": 136,
+  "routeId": 9,
+  "stopName": "Waltermart Dasmarinas",
+  "latitude": 14.324680325944282,
+  "longitude": 120.94094402532615,
+  "sequenceOrder": 10,
+  "distanceFromOriginKm": 74.85
+ },
+ {
+  "stopId": 137,
+  "routeId": 9,
+  "stopName": "The District Imus",
+  "latitude": 14.37044505065896,
+  "longitude": 120.93866752335934,
+  "sequenceOrder": 11,
+  "distanceFromOriginKm": 80.88
+ },
+ {
+  "stopId": 138,
+  "routeId": 9,
+  "stopName": "SM City Bacoor",
+  "latitude": 14.444651252312346,
+  "longitude": 120.95255424285187,
+  "sequenceOrder": 12,
+  "distanceFromOriginKm": 90.81
+ },
+ {
+  "stopId": 139,
+  "routeId": 9,
+  "stopName": "Talaba Elementary School",
+  "latitude": 14.460524240615413,
+  "longitude": 120.9606711203826,
+  "sequenceOrder": 13,
+  "distanceFromOriginKm": 93.14
+ },
+ {
+  "stopId": 140,
+  "routeId": 9,
+  "stopName": "Longos",
+  "latitude": 14.46592474106398,
+  "longitude": 120.96824210821126,
+  "sequenceOrder": 14,
+  "distanceFromOriginKm": 94.34
+ },
+ {
+  "stopId": 141,
+  "routeId": 9,
+  "stopName": "Airport Road",
+  "latitude": 14.527539108168732,
+  "longitude": 120.99368456382898,
+  "sequenceOrder": 15,
+  "distanceFromOriginKm": 103.08
+ },
+ {
+  "stopId": 142,
+  "routeId": 9,
+  "stopName": "Baclaran Market",
+  "latitude": 14.532202497600482,
+  "longitude": 120.99503224261458,
+  "sequenceOrder": 16,
+  "distanceFromOriginKm": 103.71
+ },
+ {
+  "stopId": 143,
+  "routeId": 9,
+  "stopName": "Batman Starexpress Corporation (Pasay)",
+  "latitude": 14.537734651318017,
+  "longitude": 121.00135706885003,
+  "sequenceOrder": 17,
+  "distanceFromOriginKm": 104.8
+ },
+ {
+  "stopId": 144,
+  "routeId": 10,
+  "stopName": "Batman Starexpress Corporation (Pasay)",
+  "latitude": 14.537734651318017,
+  "longitude": 121.00135706885003,
+  "sequenceOrder": 1,
+  "distanceFromOriginKm": 0.0
+ },
+ {
+  "stopId": 145,
+  "routeId": 10,
+  "stopName": "Baclaran Market",
+  "latitude": 14.532202497600482,
+  "longitude": 120.99503224261458,
+  "sequenceOrder": 2,
+  "distanceFromOriginKm": 1.09
+ },
+ {
+  "stopId": 146,
+  "routeId": 10,
+  "stopName": "Airport Road",
+  "latitude": 14.527539108168732,
+  "longitude": 120.99368456382898,
+  "sequenceOrder": 3,
+  "distanceFromOriginKm": 1.72
+ },
+ {
+  "stopId": 147,
+  "routeId": 10,
+  "stopName": "Longos",
+  "latitude": 14.46592474106398,
+  "longitude": 120.96824210821126,
+  "sequenceOrder": 4,
+  "distanceFromOriginKm": 10.46
+ },
+ {
+  "stopId": 148,
+  "routeId": 10,
+  "stopName": "Talaba Elementary School",
+  "latitude": 14.460524240615413,
+  "longitude": 120.9606711203826,
+  "sequenceOrder": 5,
+  "distanceFromOriginKm": 11.66
+ },
+ {
+  "stopId": 149,
+  "routeId": 10,
+  "stopName": "SM City Bacoor",
+  "latitude": 14.444651252312346,
+  "longitude": 120.95255424285187,
+  "sequenceOrder": 6,
+  "distanceFromOriginKm": 13.99
+ },
+ {
+  "stopId": 150,
+  "routeId": 10,
+  "stopName": "The District Imus",
+  "latitude": 14.37044505065896,
+  "longitude": 120.93866752335934,
+  "sequenceOrder": 7,
+  "distanceFromOriginKm": 23.92
+ },
+ {
+  "stopId": 151,
+  "routeId": 10,
+  "stopName": "Waltermart Dasmarinas",
+  "latitude": 14.324680325944282,
+  "longitude": 120.94094402532615,
+  "sequenceOrder": 8,
+  "distanceFromOriginKm": 29.95
+ },
+ {
+  "stopId": 152,
+  "routeId": 10,
+  "stopName": "Robinsons Pala-Pala",
+  "latitude": 14.300184394626028,
+  "longitude": 120.9544503014791,
+  "sequenceOrder": 9,
+  "distanceFromOriginKm": 33.61
+ },
+ {
+  "stopId": 153,
+  "routeId": 10,
+  "stopName": "Silang Stop",
+  "latitude": 14.224234050015488,
+  "longitude": 120.96878223154629,
+  "sequenceOrder": 10,
+  "distanceFromOriginKm": 43.78
+ },
+ {
+  "stopId": 154,
+  "routeId": 10,
+  "stopName": "Tagaytay Olivarez Plaza Bus Stop",
+  "latitude": 14.118099342963257,
+  "longitude": 120.96114836551729,
+  "sequenceOrder": 11,
+  "distanceFromOriginKm": 57.79
+ },
+ {
+  "stopId": 155,
+  "routeId": 10,
+  "stopName": "Ayala Malls Serin",
+  "latitude": 14.112134211722276,
+  "longitude": 120.95904486397785,
+  "sequenceOrder": 12,
+  "distanceFromOriginKm": 58.62
+ },
+ {
+  "stopId": 156,
+  "routeId": 10,
+  "stopName": "Amuyong Stop",
+  "latitude": 14.066618384900996,
+  "longitude": 120.8527080920992,
+  "sequenceOrder": 13,
+  "distanceFromOriginKm": 73.46
+ },
+ {
+  "stopId": 157,
+  "routeId": 10,
+  "stopName": "Nasugbu Stop",
+  "latitude": 14.058765379338745,
+  "longitude": 120.84482781388914,
+  "sequenceOrder": 14,
+  "distanceFromOriginKm": 74.9
+ },
+ {
+  "stopId": 158,
+  "routeId": 10,
+  "stopName": "Tuy Public Transport Terminal",
+  "latitude": 14.048391863900612,
+  "longitude": 120.69821217720241,
+  "sequenceOrder": 15,
+  "distanceFromOriginKm": 93.68
+ },
+ {
+  "stopId": 159,
+  "routeId": 10,
+  "stopName": "7-Eleven Lian",
+  "latitude": 14.039424445066292,
+  "longitude": 120.6520892664908,
+  "sequenceOrder": 16,
+  "distanceFromOriginKm": 99.69
+ },
+ {
+  "stopId": 160,
+  "routeId": 10,
+  "stopName": "BSC Bus Terminal Nasugbu",
+  "latitude": 14.07299620514779,
+  "longitude": 120.63195443866262,
+  "sequenceOrder": 17,
+  "distanceFromOriginKm": 104.8
+ },
+ {
+  "stopId": 161,
+  "routeId": 11,
+  "stopName": "BSC Bus Terminal Nasugbu",
+  "latitude": 14.07299620514779,
+  "longitude": 120.63195443866262,
+  "sequenceOrder": 1,
+  "distanceFromOriginKm": 0.0
+ },
+ {
+  "stopId": 162,
+  "routeId": 11,
+  "stopName": "7-Eleven Lian",
+  "latitude": 14.039424445066292,
+  "longitude": 120.6520892664908,
+  "sequenceOrder": 2,
+  "distanceFromOriginKm": 4.82
+ },
+ {
+  "stopId": 163,
+  "routeId": 11,
+  "stopName": "Tuy Public Transport Terminal",
+  "latitude": 14.048391863900612,
+  "longitude": 120.69821217720241,
+  "sequenceOrder": 3,
+  "distanceFromOriginKm": 10.48
+ },
+ {
+  "stopId": 164,
+  "routeId": 11,
+  "stopName": "7-Eleven Tuy",
+  "latitude": 14.019955730560275,
+  "longitude": 120.72939738036612,
+  "sequenceOrder": 4,
+  "distanceFromOriginKm": 15.64
+ },
+ {
+  "stopId": 165,
+  "routeId": 11,
+  "stopName": "Balayan Rotonda",
+  "latitude": 13.949846486792316,
+  "longitude": 120.72991638591982,
+  "sequenceOrder": 5,
+  "distanceFromOriginKm": 24.34
+ },
+ {
+  "stopId": 166,
+  "routeId": 11,
+  "stopName": "Robinsons Calaca",
+  "latitude": 13.928010813830046,
+  "longitude": 120.81142583008172,
+  "sequenceOrder": 6,
+  "distanceFromOriginKm": 34.52
+ },
+ {
+  "stopId": 167,
+  "routeId": 11,
+  "stopName": "XentroMall Lemery",
+  "latitude": 13.896346710310635,
+  "longitude": 120.90536330556132,
+  "sequenceOrder": 7,
+  "distanceFromOriginKm": 46.5
+ },
+ {
+  "stopId": 168,
+  "routeId": 11,
+  "stopName": "Jollibee Taal",
+  "latitude": 13.8832626956863,
+  "longitude": 120.94441244477974,
+  "sequenceOrder": 8,
+  "distanceFromOriginKm": 51.47
+ },
+ {
+  "stopId": 169,
+  "routeId": 11,
+  "stopName": "Muzon Stop",
+  "latitude": 13.855619517275397,
+  "longitude": 120.98839429992711,
+  "sequenceOrder": 9,
+  "distanceFromOriginKm": 57.79
+ },
+ {
+  "stopId": 170,
+  "routeId": 11,
+  "stopName": "Bauan Stop",
+  "latitude": 13.79578121064524,
+  "longitude": 121.00057163461699,
+  "sequenceOrder": 10,
+  "distanceFromOriginKm": 65.35
+ },
+ {
+  "stopId": 171,
+  "routeId": 11,
+  "stopName": "Waltermart San Pascual",
+  "latitude": 13.78814071180084,
+  "longitude": 121.02045835678209,
+  "sequenceOrder": 11,
+  "distanceFromOriginKm": 67.93
+ },
+ {
+  "stopId": 172,
+  "routeId": 11,
+  "stopName": "Batangas Grand Terminal",
+  "latitude": 13.790383209379026,
+  "longitude": 121.06161350134938,
+  "sequenceOrder": 12,
+  "distanceFromOriginKm": 72.9
+ },
+ {
+  "stopId": 173,
+  "routeId": 12,
+  "stopName": "Batangas Grand Terminal",
+  "latitude": 13.790383209379026,
+  "longitude": 121.06161350134938,
+  "sequenceOrder": 1,
+  "distanceFromOriginKm": 0.0
+ },
+ {
+  "stopId": 174,
+  "routeId": 12,
+  "stopName": "Waltermart San Pascual",
+  "latitude": 13.78814071180084,
+  "longitude": 121.02045835678209,
+  "sequenceOrder": 2,
+  "distanceFromOriginKm": 4.97
+ },
+ {
+  "stopId": 175,
+  "routeId": 12,
+  "stopName": "Bauan Stop",
+  "latitude": 13.79578121064524,
+  "longitude": 121.00057163461699,
+  "sequenceOrder": 3,
+  "distanceFromOriginKm": 7.55
+ },
+ {
+  "stopId": 176,
+  "routeId": 12,
+  "stopName": "Muzon Stop",
+  "latitude": 13.855619517275397,
+  "longitude": 120.98839429992711,
+  "sequenceOrder": 4,
+  "distanceFromOriginKm": 15.11
+ },
+ {
+  "stopId": 177,
+  "routeId": 12,
+  "stopName": "Jollibee Taal",
+  "latitude": 13.8832626956863,
+  "longitude": 120.94441244477974,
+  "sequenceOrder": 5,
+  "distanceFromOriginKm": 21.43
+ },
+ {
+  "stopId": 178,
+  "routeId": 12,
+  "stopName": "XentroMall Lemery",
+  "latitude": 13.896346710310635,
+  "longitude": 120.90536330556132,
+  "sequenceOrder": 6,
+  "distanceFromOriginKm": 26.4
+ },
+ {
+  "stopId": 179,
+  "routeId": 12,
+  "stopName": "Robinsons Calaca",
+  "latitude": 13.928010813830046,
+  "longitude": 120.81142583008172,
+  "sequenceOrder": 7,
+  "distanceFromOriginKm": 38.38
+ },
+ {
+  "stopId": 180,
+  "routeId": 12,
+  "stopName": "Balayan Rotonda",
+  "latitude": 13.949846486792316,
+  "longitude": 120.72991638591982,
+  "sequenceOrder": 8,
+  "distanceFromOriginKm": 48.56
+ },
+ {
+  "stopId": 181,
+  "routeId": 12,
+  "stopName": "7-Eleven Tuy",
+  "latitude": 14.019955730560275,
+  "longitude": 120.72939738036612,
+  "sequenceOrder": 9,
+  "distanceFromOriginKm": 57.26
+ },
+ {
+  "stopId": 182,
+  "routeId": 12,
+  "stopName": "Tuy Public Transport Terminal",
+  "latitude": 14.048391863900612,
+  "longitude": 120.69821217720241,
+  "sequenceOrder": 10,
+  "distanceFromOriginKm": 62.42
+ },
+ {
+  "stopId": 183,
+  "routeId": 12,
+  "stopName": "7-Eleven Lian",
+  "latitude": 14.039424445066292,
+  "longitude": 120.6520892664908,
+  "sequenceOrder": 11,
+  "distanceFromOriginKm": 68.08
+ },
+ {
+  "stopId": 184,
+  "routeId": 12,
+  "stopName": "BSC Bus Terminal Nasugbu",
+  "latitude": 14.07299620514779,
+  "longitude": 120.63195443866262,
+  "sequenceOrder": 12,
+  "distanceFromOriginKm": 72.9
+ }
+]

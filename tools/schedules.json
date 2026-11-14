@@ -1,0 +1,3162 @@
+[
+ {
+  "scheduleId": 1,
+  "routeId": 1,
+  "companyId": 1,
+  "busId": "DB-001",
+  "departureTime": "04:00",
+  "arrivalTime": "07:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 2,
+  "routeId": 1,
+  "companyId": 1,
+  "busId": "DB-002",
+  "departureTime": "05:00",
+  "arrivalTime": "08:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 3,
+  "routeId": 1,
+  "companyId": 1,
+  "busId": "DB-003",
+  "departureTime": "06:00",
+  "arrivalTime": "09:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 4,
+  "routeId": 1,
+  "companyId": 1,
+  "busId": "DB-004",
+  "departureTime": "07:00",
+  "arrivalTime": "10:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 5,
+  "routeId": 1,
+  "companyId": 1,
+  "busId": "DB-005",
+  "departureTime": "08:00",
+  "arrivalTime": "11:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 6,
+  "routeId": 1,
+  "companyId": 1,
+  "busId": "DB-006",
+  "departureTime": "09:00",
+  "arrivalTime": "12:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 7,
+  "routeId": 1,
+  "companyId": 1,
+  "busId": "DB-001",
+  "departureTime": "10:00",
+  "arrivalTime": "13:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 8,
+  "routeId": 1,
+  "companyId": 1,
+  "busId": "DB-002",
+  "departureTime": "11:00",
+  "arrivalTime": "14:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 9,
+  "routeId": 1,
+  "companyId": 1,
+  "busId": "DB-003",
+  "departureTime": "12:00",
+  "arrivalTime": "15:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 10,
+  "routeId": 1,
+  "companyId": 1,
+  "busId": "DB-004",
+  "departureTime": "13:00",
+  "arrivalTime": "16:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 11,
+  "routeId": 1,
+  "companyId": 1,
+  "busId": "DB-005",
+  "departureTime": "14:00",
+  "arrivalTime": "17:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 12,
+  "routeId": 1,
+  "companyId": 1,
+  "busId": "DB-006",
+  "departureTime": "15:00",
+  "arrivalTime": "18:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 13,
+  "routeId": 1,
+  "companyId": 1,
+  "busId": "DB-001",
+  "departureTime": "16:00",
+  "arrivalTime": "19:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 14,
+  "routeId": 1,
+  "companyId": 1,
+  "busId": "DB-002",
+  "departureTime": "17:00",
+  "arrivalTime": "20:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 15,
+  "routeId": 1,
+  "companyId": 1,
+  "busId": "DB-003",
+  "departureTime": "18:00",
+  "arrivalTime": "21:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 16,
+  "routeId": 1,
+  "companyId": 1,
+  "busId": "DB-004",
+  "departureTime": "19:00",
+  "arrivalTime": "22:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 17,
+  "routeId": 1,
+  "companyId": 1,
+  "busId": "DB-005",
+  "departureTime": "20:00",
+  "arrivalTime": "23:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 18,
+  "routeId": 2,
+  "companyId": 1,
+  "busId": "DB-004",
+  "departureTime": "04:00",
+  "arrivalTime": "07:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 19,
+  "routeId": 2,
+  "companyId": 1,
+  "busId": "DB-005",
+  "departureTime": "05:00",
+  "arrivalTime": "08:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 20,
+  "routeId": 2,
+  "companyId": 1,
+  "busId": "DB-006",
+  "departureTime": "06:00",
+  "arrivalTime": "09:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 21,
+  "routeId": 2,
+  "companyId": 1,
+  "busId": "DB-001",
+  "departureTime": "07:00",
+  "arrivalTime": "10:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 22,
+  "routeId": 2,
+  "companyId": 1,
+  "busId": "DB-002",
+  "departureTime": "08:00",
+  "arrivalTime": "11:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 23,
+  "routeId": 2,
+  "companyId": 1,
+  "busId": "DB-003",
+  "departureTime": "09:00",
+  "arrivalTime": "12:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 24,
+  "routeId": 2,
+  "companyId": 1,
+  "busId": "DB-004",
+  "departureTime": "10:00",
+  "arrivalTime": "13:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 25,
+  "routeId": 2,
+  "companyId": 1,
+  "busId": "DB-005",
+  "departureTime": "11:00",
+  "arrivalTime": "14:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 26,
+  "routeId": 2,
+  "companyId": 1,
+  "busId": "DB-006",
+  "departureTime": "12:00",
+  "arrivalTime": "15:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 27,
+  "routeId": 2,
+  "companyId": 1,
+  "busId": "DB-001",
+  "departureTime": "13:00",
+  "arrivalTime": "16:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 28,
+  "routeId": 2,
+  "companyId": 1,
+  "busId": "DB-002",
+  "departureTime": "14:00",
+  "arrivalTime": "17:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 29,
+  "routeId": 2,
+  "companyId": 1,
+  "busId": "DB-003",
+  "departureTime": "15:00",
+  "arrivalTime": "18:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 30,
+  "routeId": 2,
+  "companyId": 1,
+  "busId": "DB-004",
+  "departureTime": "16:00",
+  "arrivalTime": "19:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 31,
+  "routeId": 2,
+  "companyId": 1,
+  "busId": "DB-005",
+  "departureTime": "17:00",
+  "arrivalTime": "20:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 32,
+  "routeId": 2,
+  "companyId": 1,
+  "busId": "DB-006",
+  "departureTime": "18:00",
+  "arrivalTime": "21:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 33,
+  "routeId": 2,
+  "companyId": 1,
+  "busId": "DB-001",
+  "departureTime": "19:00",
+  "arrivalTime": "22:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 34,
+  "routeId": 2,
+  "companyId": 1,
+  "busId": "DB-002",
+  "departureTime": "20:00",
+  "arrivalTime": "23:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 285.43
+ },
+ {
+  "scheduleId": 35,
+  "routeId": 3,
+  "companyId": 1,
+  "busId": "DB-007",
+  "departureTime": "04:00",
+  "arrivalTime": "07:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 36,
+  "routeId": 3,
+  "companyId": 1,
+  "busId": "DB-008",
+  "departureTime": "05:00",
+  "arrivalTime": "08:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 37,
+  "routeId": 3,
+  "companyId": 1,
+  "busId": "DB-009",
+  "departureTime": "06:00",
+  "arrivalTime": "09:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 38,
+  "routeId": 3,
+  "companyId": 1,
+  "busId": "DB-010",
+  "departureTime": "07:00",
+  "arrivalTime": "10:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 39,
+  "routeId": 3,
+  "companyId": 1,
+  "busId": "DB-011",
+  "departureTime": "08:00",
+  "arrivalTime": "11:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 40,
+  "routeId": 3,
+  "companyId": 1,
+  "busId": "DB-012",
+  "departureTime": "09:00",
+  "arrivalTime": "12:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 41,
+  "routeId": 3,
+  "companyId": 1,
+  "busId": "DB-007",
+  "departureTime": "10:00",
+  "arrivalTime": "13:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 42,
+  "routeId": 3,
+  "companyId": 1,
+  "busId": "DB-008",
+  "departureTime": "11:00",
+  "arrivalTime": "14:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 43,
+  "routeId": 3,
+  "companyId": 1,
+  "busId": "DB-009",
+  "departureTime": "12:00",
+  "arrivalTime": "15:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 44,
+  "routeId": 3,
+  "companyId": 1,
+  "busId": "DB-010",
+  "departureTime": "13:00",
+  "arrivalTime": "16:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 45,
+  "routeId": 3,
+  "companyId": 1,
+  "busId": "DB-011",
+  "departureTime": "14:00",
+  "arrivalTime": "17:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 46,
+  "routeId": 3,
+  "companyId": 1,
+  "busId": "DB-012",
+  "departureTime": "15:00",
+  "arrivalTime": "18:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 47,
+  "routeId": 3,
+  "companyId": 1,
+  "busId": "DB-007",
+  "departureTime": "16:00",
+  "arrivalTime": "19:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 48,
+  "routeId": 3,
+  "companyId": 1,
+  "busId": "DB-008",
+  "departureTime": "17:00",
+  "arrivalTime": "20:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 49,
+  "routeId": 3,
+  "companyId": 1,
+  "busId": "DB-009",
+  "departureTime": "18:00",
+  "arrivalTime": "21:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 50,
+  "routeId": 3,
+  "companyId": 1,
+  "busId": "DB-010",
+  "departureTime": "19:00",
+  "arrivalTime": "22:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 51,
+  "routeId": 3,
+  "companyId": 1,
+  "busId": "DB-011",
+  "departureTime": "20:00",
+  "arrivalTime": "23:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 52,
+  "routeId": 4,
+  "companyId": 1,
+  "busId": "DB-010",
+  "departureTime": "04:00",
+  "arrivalTime": "07:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 53,
+  "routeId": 4,
+  "companyId": 1,
+  "busId": "DB-011",
+  "departureTime": "05:00",
+  "arrivalTime": "08:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 54,
+  "routeId": 4,
+  "companyId": 1,
+  "busId": "DB-012",
+  "departureTime": "06:00",
+  "arrivalTime": "09:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 55,
+  "routeId": 4,
+  "companyId": 1,
+  "busId": "DB-007",
+  "departureTime": "07:00",
+  "arrivalTime": "10:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 56,
+  "routeId": 4,
+  "companyId": 1,
+  "busId": "DB-008",
+  "departureTime": "08:00",
+  "arrivalTime": "11:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 57,
+  "routeId": 4,
+  "companyId": 1,
+  "busId": "DB-009",
+  "departureTime": "09:00",
+  "arrivalTime": "12:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 58,
+  "routeId": 4,
+  "companyId": 1,
+  "busId": "DB-010",
+  "departureTime": "10:00",
+  "arrivalTime": "13:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 59,
+  "routeId": 4,
+  "companyId": 1,
+  "busId": "DB-011",
+  "departureTime": "11:00",
+  "arrivalTime": "14:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 60,
+  "routeId": 4,
+  "companyId": 1,
+  "busId": "DB-012",
+  "departureTime": "12:00",
+  "arrivalTime": "15:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 61,
+  "routeId": 4,
+  "companyId": 1,
+  "busId": "DB-007",
+  "departureTime": "13:00",
+  "arrivalTime": "16:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 62,
+  "routeId": 4,
+  "companyId": 1,
+  "busId": "DB-008",
+  "departureTime": "14:00",
+  "arrivalTime": "17:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 63,
+  "routeId": 4,
+  "companyId": 1,
+  "busId": "DB-009",
+  "departureTime": "15:00",
+  "arrivalTime": "18:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 64,
+  "routeId": 4,
+  "companyId": 1,
+  "busId": "DB-010",
+  "departureTime": "16:00",
+  "arrivalTime": "19:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 65,
+  "routeId": 4,
+  "companyId": 1,
+  "busId": "DB-011",
+  "departureTime": "17:00",
+  "arrivalTime": "20:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 66,
+  "routeId": 4,
+  "companyId": 1,
+  "busId": "DB-012",
+  "departureTime": "18:00",
+  "arrivalTime": "21:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 67,
+  "routeId": 4,
+  "companyId": 1,
+  "busId": "DB-007",
+  "departureTime": "19:00",
+  "arrivalTime": "22:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 68,
+  "routeId": 4,
+  "companyId": 1,
+  "busId": "DB-008",
+  "departureTime": "20:00",
+  "arrivalTime": "23:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 274.4
+ },
+ {
+  "scheduleId": 69,
+  "routeId": 5,
+  "companyId": 3,
+  "busId": "SB-001",
+  "departureTime": "06:00",
+  "arrivalTime": "09:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 219.89
+ },
+ {
+  "scheduleId": 70,
+  "routeId": 5,
+  "companyId": 3,
+  "busId": "SB-002",
+  "departureTime": "07:00",
+  "arrivalTime": "10:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 219.89
+ },
+ {
+  "scheduleId": 71,
+  "routeId": 5,
+  "companyId": 3,
+  "busId": "SB-003",
+  "departureTime": "08:00",
+  "arrivalTime": "11:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 219.89
+ },
+ {
+  "scheduleId": 72,
+  "routeId": 5,
+  "companyId": 3,
+  "busId": "SB-004",
+  "departureTime": "09:00",
+  "arrivalTime": "12:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 219.89
+ },
+ {
+  "scheduleId": 73,
+  "routeId": 5,
+  "companyId": 3,
+  "busId": "SB-005",
+  "departureTime": "10:00",
+  "arrivalTime": "13:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 219.89
+ },
+ {
+  "scheduleId": 74,
+  "routeId": 5,
+  "companyId": 3,
+  "busId": "SB-006",
+  "departureTime": "11:00",
+  "arrivalTime": "14:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 219.89
+ },
+ {
+  "scheduleId": 75,
+  "routeId": 5,
+  "companyId": 3,
+  "busId": "SB-001",
+  "departureTime": "12:00",
+  "arrivalTime": "15:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 219.89
+ },
+ {
+  "scheduleId": 76,
+  "routeId": 5,
+  "companyId": 3,
+  "busId": "SB-002",
+  "departureTime": "13:00",
+  "arrivalTime": "16:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 219.89
+ },
+ {
+  "scheduleId": 77,
+  "routeId": 5,
+  "companyId": 3,
+  "busId": "SB-003",
+  "departureTime": "14:00",
+  "arrivalTime": "17:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 219.89
+ },
+ {
+  "scheduleId": 78,
+  "routeId": 5,
+  "companyId": 3,
+  "busId": "SB-004",
+  "departureTime": "15:00",
+  "arrivalTime": "18:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 219.89
+ },
+ {
+  "scheduleId": 79,
+  "routeId": 5,
+  "companyId": 3,
+  "busId": "SB-005",
+  "departureTime": "16:00",
+  "arrivalTime": "19:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 219.89
+ },
+ {
+  "scheduleId": 80,
+  "routeId": 5,
+  "companyId": 3,
+  "busId": "SB-006",
+  "departureTime": "17:00",
+  "arrivalTime": "20:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 219.89
+ },
+ {
+  "scheduleId": 81,
+  "routeId": 5,
+  "companyId": 3,
+  "busId": "SB-001",
+  "departureTime": "18:00",
+  "arrivalTime": "21:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 219.89
+ },
+ {
+  "scheduleId": 82,
+  "routeId": 6,
+  "companyId": 3,
+  "busId": "SB-004",
+  "departureTime": "06:00",
+  "arrivalTime": "09:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 219.89
+ },
+ {
+  "scheduleId": 83,
+  "routeId": 6,
+  "companyId": 3,
+  "busId": "SB-005",
+  "departureTime": "07:00",
+  "arrivalTime": "10:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 219.89
+ },
+ {
+  "scheduleId": 84,
+  "routeId": 6,
+  "companyId": 3,
+  "busId": "SB-006",
+  "departureTime": "08:00",
+  "arrivalTime": "11:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 219.89
+ },
+ {
+  "scheduleId": 85,
+  "routeId": 6,
+  "companyId": 3,
+  "busId": "SB-001",
+  "departureTime": "09:00",
+  "arrivalTime": "12:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 219.89
+ },
+ {
+  "scheduleId": 86,
+  "routeId": 6,
+  "companyId": 3,
+  "busId": "SB-002",
+  "departureTime": "10:00",
+  "arrivalTime": "13:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 219.89
+ },
+ {
+  "scheduleId": 87,
+  "routeId": 6,
+  "companyId": 3,
+  "busId": "SB-003",
+  "departureTime": "11:00",
+  "arrivalTime": "14:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 219.89
+ },
+ {
+  "scheduleId": 88,
+  "routeId": 6,
+  "companyId": 3,
+  "busId": "SB-004",
+  "departureTime": "12:00",
+  "arrivalTime": "15:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 219.89
+ },
+ {
+  "scheduleId": 89,
+  "routeId": 6,
+  "companyId": 3,
+  "busId": "SB-005",
+  "departureTime": "13:00",
+  "arrivalTime": "16:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 219.89
+ },
+ {
+  "scheduleId": 90,
+  "routeId": 6,
+  "companyId": 3,
+  "busId": "SB-006",
+  "departureTime": "14:00",
+  "arrivalTime": "17:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 219.89
+ },
+ {
+  "scheduleId": 91,
+  "routeId": 6,
+  "companyId": 3,
+  "busId": "SB-001",
+  "departureTime": "15:00",
+  "arrivalTime": "18:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 219.89
+ },
+ {
+  "scheduleId": 92,
+  "routeId": 6,
+  "companyId": 3,
+  "busId": "SB-002",
+  "departureTime": "16:00",
+  "arrivalTime": "19:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 219.89
+ },
+ {
+  "scheduleId": 93,
+  "routeId": 6,
+  "companyId": 3,
+  "busId": "SB-003",
+  "departureTime": "17:00",
+  "arrivalTime": "20:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 219.89
+ },
+ {
+  "scheduleId": 94,
+  "routeId": 6,
+  "companyId": 3,
+  "busId": "SB-004",
+  "departureTime": "18:00",
+  "arrivalTime": "21:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 219.89
+ },
+ {
+  "scheduleId": 95,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-001",
+  "departureTime": "03:00",
+  "arrivalTime": "06:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 96,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-002",
+  "departureTime": "03:30",
+  "arrivalTime": "07:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 97,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-003",
+  "departureTime": "04:00",
+  "arrivalTime": "07:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 98,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-004",
+  "departureTime": "04:30",
+  "arrivalTime": "08:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 99,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-005",
+  "departureTime": "05:00",
+  "arrivalTime": "08:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 100,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-006",
+  "departureTime": "05:30",
+  "arrivalTime": "09:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 101,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-007",
+  "departureTime": "06:00",
+  "arrivalTime": "09:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 102,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-008",
+  "departureTime": "06:30",
+  "arrivalTime": "10:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 103,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-001",
+  "departureTime": "07:00",
+  "arrivalTime": "10:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 104,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-002",
+  "departureTime": "07:30",
+  "arrivalTime": "11:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 105,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-003",
+  "departureTime": "08:00",
+  "arrivalTime": "11:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 106,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-004",
+  "departureTime": "08:30",
+  "arrivalTime": "12:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 107,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-005",
+  "departureTime": "09:00",
+  "arrivalTime": "12:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 108,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-006",
+  "departureTime": "09:30",
+  "arrivalTime": "13:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 109,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-007",
+  "departureTime": "10:00",
+  "arrivalTime": "13:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 110,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-008",
+  "departureTime": "10:30",
+  "arrivalTime": "14:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 111,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-001",
+  "departureTime": "11:00",
+  "arrivalTime": "14:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 112,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-002",
+  "departureTime": "11:30",
+  "arrivalTime": "15:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 113,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-003",
+  "departureTime": "12:00",
+  "arrivalTime": "15:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 114,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-004",
+  "departureTime": "12:30",
+  "arrivalTime": "16:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 115,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-005",
+  "departureTime": "13:00",
+  "arrivalTime": "16:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 116,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-006",
+  "departureTime": "13:30",
+  "arrivalTime": "17:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 117,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-007",
+  "departureTime": "14:00",
+  "arrivalTime": "17:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 118,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-008",
+  "departureTime": "14:30",
+  "arrivalTime": "18:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 119,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-001",
+  "departureTime": "15:00",
+  "arrivalTime": "18:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 120,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-002",
+  "departureTime": "15:30",
+  "arrivalTime": "19:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 121,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-003",
+  "departureTime": "16:00",
+  "arrivalTime": "19:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 122,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-004",
+  "departureTime": "16:30",
+  "arrivalTime": "20:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 123,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-005",
+  "departureTime": "17:00",
+  "arrivalTime": "20:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 124,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-006",
+  "departureTime": "17:30",
+  "arrivalTime": "21:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 125,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-007",
+  "departureTime": "18:00",
+  "arrivalTime": "21:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 126,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-008",
+  "departureTime": "18:30",
+  "arrivalTime": "22:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 127,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-001",
+  "departureTime": "19:00",
+  "arrivalTime": "22:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 128,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-002",
+  "departureTime": "19:30",
+  "arrivalTime": "23:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 129,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-003",
+  "departureTime": "20:00",
+  "arrivalTime": "23:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 130,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-004",
+  "departureTime": "20:30",
+  "arrivalTime": "00:00",
+  "arrivalNextDay": true,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 131,
+  "routeId": 7,
+  "companyId": 2,
+  "busId": "BSB-005",
+  "departureTime": "21:00",
+  "arrivalTime": "00:30",
+  "arrivalNextDay": true,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 132,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-005",
+  "departureTime": "03:00",
+  "arrivalTime": "06:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 133,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-006",
+  "departureTime": "03:30",
+  "arrivalTime": "07:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 134,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-007",
+  "departureTime": "04:00",
+  "arrivalTime": "07:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 135,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-008",
+  "departureTime": "04:30",
+  "arrivalTime": "08:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 136,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-001",
+  "departureTime": "05:00",
+  "arrivalTime": "08:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 137,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-002",
+  "departureTime": "05:30",
+  "arrivalTime": "09:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 138,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-003",
+  "departureTime": "06:00",
+  "arrivalTime": "09:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 139,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-004",
+  "departureTime": "06:30",
+  "arrivalTime": "10:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 140,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-005",
+  "departureTime": "07:00",
+  "arrivalTime": "10:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 141,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-006",
+  "departureTime": "07:30",
+  "arrivalTime": "11:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 142,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-007",
+  "departureTime": "08:00",
+  "arrivalTime": "11:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 143,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-008",
+  "departureTime": "08:30",
+  "arrivalTime": "12:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 144,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-001",
+  "departureTime": "09:00",
+  "arrivalTime": "12:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 145,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-002",
+  "departureTime": "09:30",
+  "arrivalTime": "13:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 146,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-003",
+  "departureTime": "10:00",
+  "arrivalTime": "13:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 147,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-004",
+  "departureTime": "10:30",
+  "arrivalTime": "14:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 148,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-005",
+  "departureTime": "11:00",
+  "arrivalTime": "14:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 149,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-006",
+  "departureTime": "11:30",
+  "arrivalTime": "15:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 150,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-007",
+  "departureTime": "12:00",
+  "arrivalTime": "15:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 151,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-008",
+  "departureTime": "12:30",
+  "arrivalTime": "16:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 152,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-001",
+  "departureTime": "13:00",
+  "arrivalTime": "16:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 153,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-002",
+  "departureTime": "13:30",
+  "arrivalTime": "17:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 154,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-003",
+  "departureTime": "14:00",
+  "arrivalTime": "17:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 155,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-004",
+  "departureTime": "14:30",
+  "arrivalTime": "18:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 156,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-005",
+  "departureTime": "15:00",
+  "arrivalTime": "18:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 157,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-006",
+  "departureTime": "15:30",
+  "arrivalTime": "19:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 158,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-007",
+  "departureTime": "16:00",
+  "arrivalTime": "19:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 159,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-008",
+  "departureTime": "16:30",
+  "arrivalTime": "20:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 160,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-001",
+  "departureTime": "17:00",
+  "arrivalTime": "20:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 161,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-002",
+  "departureTime": "17:30",
+  "arrivalTime": "21:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 162,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-003",
+  "departureTime": "18:00",
+  "arrivalTime": "21:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 163,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-004",
+  "departureTime": "18:30",
+  "arrivalTime": "22:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 164,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-005",
+  "departureTime": "19:00",
+  "arrivalTime": "22:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 165,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-006",
+  "departureTime": "19:30",
+  "arrivalTime": "23:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 166,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-007",
+  "departureTime": "20:00",
+  "arrivalTime": "23:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 167,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-008",
+  "departureTime": "20:30",
+  "arrivalTime": "00:00",
+  "arrivalNextDay": true,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 168,
+  "routeId": 8,
+  "companyId": 2,
+  "busId": "BSB-001",
+  "departureTime": "21:00",
+  "arrivalTime": "00:30",
+  "arrivalNextDay": true,
+  "estimatedFare": 262.15
+ },
+ {
+  "scheduleId": 169,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-009",
+  "departureTime": "03:00",
+  "arrivalTime": "06:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 170,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-010",
+  "departureTime": "03:30",
+  "arrivalTime": "07:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 171,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-011",
+  "departureTime": "04:00",
+  "arrivalTime": "07:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 172,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-012",
+  "departureTime": "04:30",
+  "arrivalTime": "08:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 173,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-013",
+  "departureTime": "05:00",
+  "arrivalTime": "08:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 174,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-014",
+  "departureTime": "05:30",
+  "arrivalTime": "09:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 175,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-015",
+  "departureTime": "06:00",
+  "arrivalTime": "09:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 176,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-016",
+  "departureTime": "06:30",
+  "arrivalTime": "10:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 177,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-009",
+  "departureTime": "07:00",
+  "arrivalTime": "10:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 178,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-010",
+  "departureTime": "07:30",
+  "arrivalTime": "11:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 179,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-011",
+  "departureTime": "08:00",
+  "arrivalTime": "11:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 180,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-012",
+  "departureTime": "08:30",
+  "arrivalTime": "12:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 181,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-013",
+  "departureTime": "09:00",
+  "arrivalTime": "12:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 182,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-014",
+  "departureTime": "09:30",
+  "arrivalTime": "13:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 183,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-015",
+  "departureTime": "10:00",
+  "arrivalTime": "13:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 184,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-016",
+  "departureTime": "10:30",
+  "arrivalTime": "14:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 185,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-009",
+  "departureTime": "11:00",
+  "arrivalTime": "14:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 186,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-010",
+  "departureTime": "11:30",
+  "arrivalTime": "15:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 187,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-011",
+  "departureTime": "12:00",
+  "arrivalTime": "15:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 188,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-012",
+  "departureTime": "12:30",
+  "arrivalTime": "16:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 189,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-013",
+  "departureTime": "13:00",
+  "arrivalTime": "16:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 190,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-014",
+  "departureTime": "13:30",
+  "arrivalTime": "17:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 191,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-015",
+  "departureTime": "14:00",
+  "arrivalTime": "17:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 192,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-016",
+  "departureTime": "14:30",
+  "arrivalTime": "18:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 193,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-009",
+  "departureTime": "15:00",
+  "arrivalTime": "18:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 194,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-010",
+  "departureTime": "15:30",
+  "arrivalTime": "19:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 195,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-011",
+  "departureTime": "16:00",
+  "arrivalTime": "19:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 196,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-012",
+  "departureTime": "16:30",
+  "arrivalTime": "20:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 197,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-013",
+  "departureTime": "17:00",
+  "arrivalTime": "20:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 198,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-014",
+  "departureTime": "17:30",
+  "arrivalTime": "21:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 199,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-015",
+  "departureTime": "18:00",
+  "arrivalTime": "21:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 200,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-016",
+  "departureTime": "18:30",
+  "arrivalTime": "22:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 201,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-009",
+  "departureTime": "19:00",
+  "arrivalTime": "22:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 202,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-010",
+  "departureTime": "19:30",
+  "arrivalTime": "23:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 203,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-011",
+  "departureTime": "20:00",
+  "arrivalTime": "23:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 204,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-012",
+  "departureTime": "20:30",
+  "arrivalTime": "00:00",
+  "arrivalNextDay": true,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 205,
+  "routeId": 9,
+  "companyId": 2,
+  "busId": "BSB-013",
+  "departureTime": "21:00",
+  "arrivalTime": "00:30",
+  "arrivalNextDay": true,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 206,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-013",
+  "departureTime": "03:00",
+  "arrivalTime": "06:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 207,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-014",
+  "departureTime": "03:30",
+  "arrivalTime": "07:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 208,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-015",
+  "departureTime": "04:00",
+  "arrivalTime": "07:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 209,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-016",
+  "departureTime": "04:30",
+  "arrivalTime": "08:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 210,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-009",
+  "departureTime": "05:00",
+  "arrivalTime": "08:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 211,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-010",
+  "departureTime": "05:30",
+  "arrivalTime": "09:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 212,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-011",
+  "departureTime": "06:00",
+  "arrivalTime": "09:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 213,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-012",
+  "departureTime": "06:30",
+  "arrivalTime": "10:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 214,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-013",
+  "departureTime": "07:00",
+  "arrivalTime": "10:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 215,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-014",
+  "departureTime": "07:30",
+  "arrivalTime": "11:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 216,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-015",
+  "departureTime": "08:00",
+  "arrivalTime": "11:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 217,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-016",
+  "departureTime": "08:30",
+  "arrivalTime": "12:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 218,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-009",
+  "departureTime": "09:00",
+  "arrivalTime": "12:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 219,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-010",
+  "departureTime": "09:30",
+  "arrivalTime": "13:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 220,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-011",
+  "departureTime": "10:00",
+  "arrivalTime": "13:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 221,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-012",
+  "departureTime": "10:30",
+  "arrivalTime": "14:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 222,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-013",
+  "departureTime": "11:00",
+  "arrivalTime": "14:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 223,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-014",
+  "departureTime": "11:30",
+  "arrivalTime": "15:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 224,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-015",
+  "departureTime": "12:00",
+  "arrivalTime": "15:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 225,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-016",
+  "departureTime": "12:30",
+  "arrivalTime": "16:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 226,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-009",
+  "departureTime": "13:00",
+  "arrivalTime": "16:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 227,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-010",
+  "departureTime": "13:30",
+  "arrivalTime": "17:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 228,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-011",
+  "departureTime": "14:00",
+  "arrivalTime": "17:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 229,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-012",
+  "departureTime": "14:30",
+  "arrivalTime": "18:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 230,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-013",
+  "departureTime": "15:00",
+  "arrivalTime": "18:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 231,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-014",
+  "departureTime": "15:30",
+  "arrivalTime": "19:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 232,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-015",
+  "departureTime": "16:00",
+  "arrivalTime": "19:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 233,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-016",
+  "departureTime": "16:30",
+  "arrivalTime": "20:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 234,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-009",
+  "departureTime": "17:00",
+  "arrivalTime": "20:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 235,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-010",
+  "departureTime": "17:30",
+  "arrivalTime": "21:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 236,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-011",
+  "departureTime": "18:00",
+  "arrivalTime": "21:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 237,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-012",
+  "departureTime": "18:30",
+  "arrivalTime": "22:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 238,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-013",
+  "departureTime": "19:00",
+  "arrivalTime": "22:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 239,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-014",
+  "departureTime": "19:30",
+  "arrivalTime": "23:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 240,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-015",
+  "departureTime": "20:00",
+  "arrivalTime": "23:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 241,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-016",
+  "departureTime": "20:30",
+  "arrivalTime": "00:00",
+  "arrivalNextDay": true,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 242,
+  "routeId": 10,
+  "companyId": 2,
+  "busId": "BSB-009",
+  "departureTime": "21:00",
+  "arrivalTime": "00:30",
+  "arrivalNextDay": true,
+  "estimatedFare": 256.76
+ },
+ {
+  "scheduleId": 243,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-017",
+  "departureTime": "03:00",
+  "arrivalTime": "04:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 244,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-018",
+  "departureTime": "03:30",
+  "arrivalTime": "05:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 245,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-019",
+  "departureTime": "04:00",
+  "arrivalTime": "05:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 246,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-020",
+  "departureTime": "04:30",
+  "arrivalTime": "06:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 247,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-021",
+  "departureTime": "05:00",
+  "arrivalTime": "06:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 248,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-022",
+  "departureTime": "05:30",
+  "arrivalTime": "07:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 249,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-023",
+  "departureTime": "06:00",
+  "arrivalTime": "07:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 250,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-024",
+  "departureTime": "06:30",
+  "arrivalTime": "08:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 251,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-017",
+  "departureTime": "07:00",
+  "arrivalTime": "08:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 252,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-018",
+  "departureTime": "07:30",
+  "arrivalTime": "09:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 253,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-019",
+  "departureTime": "08:00",
+  "arrivalTime": "09:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 254,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-020",
+  "departureTime": "08:30",
+  "arrivalTime": "10:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 255,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-021",
+  "departureTime": "09:00",
+  "arrivalTime": "10:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 256,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-022",
+  "departureTime": "09:30",
+  "arrivalTime": "11:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 257,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-023",
+  "departureTime": "10:00",
+  "arrivalTime": "11:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 258,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-024",
+  "departureTime": "10:30",
+  "arrivalTime": "12:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 259,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-017",
+  "departureTime": "11:00",
+  "arrivalTime": "12:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 260,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-018",
+  "departureTime": "11:30",
+  "arrivalTime": "13:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 261,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-019",
+  "departureTime": "12:00",
+  "arrivalTime": "13:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 262,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-020",
+  "departureTime": "12:30",
+  "arrivalTime": "14:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 263,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-021",
+  "departureTime": "13:00",
+  "arrivalTime": "14:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 264,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-022",
+  "departureTime": "13:30",
+  "arrivalTime": "15:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 265,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-023",
+  "departureTime": "14:00",
+  "arrivalTime": "15:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 266,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-024",
+  "departureTime": "14:30",
+  "arrivalTime": "16:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 267,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-017",
+  "departureTime": "15:00",
+  "arrivalTime": "16:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 268,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-018",
+  "departureTime": "15:30",
+  "arrivalTime": "17:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 269,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-019",
+  "departureTime": "16:00",
+  "arrivalTime": "17:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 270,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-020",
+  "departureTime": "16:30",
+  "arrivalTime": "18:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 271,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-021",
+  "departureTime": "17:00",
+  "arrivalTime": "18:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 272,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-022",
+  "departureTime": "17:30",
+  "arrivalTime": "19:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 273,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-023",
+  "departureTime": "18:00",
+  "arrivalTime": "19:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 274,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-024",
+  "departureTime": "18:30",
+  "arrivalTime": "20:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 275,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-017",
+  "departureTime": "19:00",
+  "arrivalTime": "20:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 276,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-018",
+  "departureTime": "19:30",
+  "arrivalTime": "21:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 277,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-019",
+  "departureTime": "20:00",
+  "arrivalTime": "21:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 278,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-020",
+  "departureTime": "20:30",
+  "arrivalTime": "22:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 279,
+  "routeId": 11,
+  "companyId": 2,
+  "busId": "BSB-021",
+  "departureTime": "21:00",
+  "arrivalTime": "22:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 280,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-021",
+  "departureTime": "03:00",
+  "arrivalTime": "04:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 281,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-022",
+  "departureTime": "03:30",
+  "arrivalTime": "05:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 282,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-023",
+  "departureTime": "04:00",
+  "arrivalTime": "05:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 283,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-024",
+  "departureTime": "04:30",
+  "arrivalTime": "06:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 284,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-017",
+  "departureTime": "05:00",
+  "arrivalTime": "06:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 285,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-018",
+  "departureTime": "05:30",
+  "arrivalTime": "07:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 286,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-019",
+  "departureTime": "06:00",
+  "arrivalTime": "07:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 287,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-020",
+  "departureTime": "06:30",
+  "arrivalTime": "08:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 288,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-021",
+  "departureTime": "07:00",
+  "arrivalTime": "08:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 289,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-022",
+  "departureTime": "07:30",
+  "arrivalTime": "09:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 290,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-023",
+  "departureTime": "08:00",
+  "arrivalTime": "09:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 291,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-024",
+  "departureTime": "08:30",
+  "arrivalTime": "10:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 292,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-017",
+  "departureTime": "09:00",
+  "arrivalTime": "10:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 293,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-018",
+  "departureTime": "09:30",
+  "arrivalTime": "11:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 294,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-019",
+  "departureTime": "10:00",
+  "arrivalTime": "11:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 295,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-020",
+  "departureTime": "10:30",
+  "arrivalTime": "12:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 296,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-021",
+  "departureTime": "11:00",
+  "arrivalTime": "12:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 297,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-022",
+  "departureTime": "11:30",
+  "arrivalTime": "13:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 298,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-023",
+  "departureTime": "12:00",
+  "arrivalTime": "13:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 299,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-024",
+  "departureTime": "12:30",
+  "arrivalTime": "14:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 300,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-017",
+  "departureTime": "13:00",
+  "arrivalTime": "14:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 301,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-018",
+  "departureTime": "13:30",
+  "arrivalTime": "15:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 302,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-019",
+  "departureTime": "14:00",
+  "arrivalTime": "15:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 303,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-020",
+  "departureTime": "14:30",
+  "arrivalTime": "16:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 304,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-021",
+  "departureTime": "15:00",
+  "arrivalTime": "16:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 305,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-022",
+  "departureTime": "15:30",
+  "arrivalTime": "17:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 306,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-023",
+  "departureTime": "16:00",
+  "arrivalTime": "17:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 307,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-024",
+  "departureTime": "16:30",
+  "arrivalTime": "18:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 308,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-017",
+  "departureTime": "17:00",
+  "arrivalTime": "18:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 309,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-018",
+  "departureTime": "17:30",
+  "arrivalTime": "19:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 310,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-019",
+  "departureTime": "18:00",
+  "arrivalTime": "19:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 311,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-020",
+  "departureTime": "18:30",
+  "arrivalTime": "20:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 312,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-021",
+  "departureTime": "19:00",
+  "arrivalTime": "20:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 313,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-022",
+  "departureTime": "19:30",
+  "arrivalTime": "21:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 314,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-023",
+  "departureTime": "20:00",
+  "arrivalTime": "21:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 315,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-024",
+  "departureTime": "20:30",
+  "arrivalTime": "22:00",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ },
+ {
+  "scheduleId": 316,
+  "routeId": 12,
+  "companyId": 2,
+  "busId": "BSB-017",
+  "departureTime": "21:00",
+  "arrivalTime": "22:30",
+  "arrivalNextDay": false,
+  "estimatedFare": 178.61
+ }
+]
