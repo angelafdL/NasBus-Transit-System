@@ -33,9 +33,8 @@ class SegmentResultAdapter(
     ) : RecyclerView.ViewHolder(binding.root) {
 
         fun bind(item: SegmentResult) {
-            binding.tvRouteName.text = item.routeName
-            binding.tvCompanyName.text = item.companyName
-            binding.tvSegmentStops.text = "${item.fromStopName} → ${item.toStopName}"
+            binding.tvTripTitle.text = "${item.fromStopName} → ${item.toStopName}"
+            binding.tvRouteCompanySubtitle.text = "${item.routeName} • ${item.companyName}"
             binding.tvDistance.text = "Distance: ${String.format(Locale.US, "%.1f", item.segmentDistanceKm)} km"
 
             val estimatedFarePesos = item.segmentFare.roundToInt()

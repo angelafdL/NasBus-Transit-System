@@ -133,8 +133,16 @@ class RouteMapFragment : Fragment() {
                     }
 
                     uiState.route?.let { route ->
-                        binding.tvRouteTitle.text = route.routeName
-                        binding.tvRouteSubtitle.text = "${route.originName} → ${route.destinationName}"
+                        val from = uiState.fromStopName
+                        val to = uiState.toStopName
+                        if (!from.isNullOrBlank() && !to.isNullOrBlank()) {
+                            binding.tvRouteTitle.text = "$from → $to"
+                        } else {
+                            binding.tvRouteTitle.text = "${route.originName} → ${route.destinationName}"
+                        }
+
+                        val company = if (uiState.companyName.isNotBlank()) uiState.companyName else "Bus Company"
+                        binding.tvRouteSubtitle.text = "${route.routeName} • $company"
                     }
 
                     renderIfDataReady()

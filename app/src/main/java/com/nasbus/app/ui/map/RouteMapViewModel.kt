@@ -6,6 +6,7 @@ import androidx.lifecycle.viewModelScope
 import com.nasbus.app.data.local.entity.RouteEntity
 import com.nasbus.app.data.local.entity.StopEntity
 import com.nasbus.app.data.repository.RouteRepository
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -14,6 +15,7 @@ import kotlinx.coroutines.launch
 data class MapUiState(
     val isLoading: Boolean = true,
     val route: RouteEntity? = null,
+    val companyName: String = "",
     val stops: List<StopEntity> = emptyList(),
     val fromStopName: String? = null,
     val toStopName: String? = null,
@@ -28,23 +30,22 @@ class RouteMapViewModel(application: Application) : AndroidViewModel(application
     val uiState: StateFlow<MapUiState> = _uiState.asStateFlow()
 
     fun loadRouteData(routeId: Int, fromStopName: String? = null, toStopName: String? = null) {
-        viewModelScope.launch {
+        viewModelScope.launch(Dispatchers.IO) {
             _uiState.value = _uiState.value.copy(
                 isLoading = true,
                 fromStopName = fromStopName,
                 toStopName = toStopName
             )
             try {
-                repository.getRouteById(routeId).collect { route ->
-                    if (route != null) {
-                        repository.getStopsForRoute(routeId).collect { stops ->
-                            _uiState.value = _uiState.value.copy(
-                                isLoading = false,
-                                route = route,
-                                stops = stops,
-                                error = null
-                            )
-                        }
+                repository.getRouteDetailData(routeId).collect { detailData ->
+                    if (detailData != null) {
+                        _uiState.value = _uiState.value.copy(
+                            isLoading = false,
+                            route = detailData.route,
+                            companyName = detailData.companyName,
+                            stops = detailData.stops,
+                            error = null
+                        )
                     } else {
                         _uiState.value = _uiState.value.copy(
                             isLoading = false,
