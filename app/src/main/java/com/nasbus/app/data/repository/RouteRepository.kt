@@ -5,6 +5,7 @@ import com.nasbus.app.data.local.db.AppDatabase
 import com.nasbus.app.data.local.entity.CompanyEntity
 import com.nasbus.app.data.local.entity.RouteEntity
 import com.nasbus.app.data.local.entity.StopEntity
+import com.nasbus.app.data.local.model.RouteDetailDataModel
 import com.nasbus.app.data.local.model.RouteListItem
 import com.nasbus.app.data.local.model.SegmentResult
 import kotlinx.coroutines.Dispatchers
@@ -21,6 +22,18 @@ class RouteRepository(context: Context) {
 
     fun getRouteById(routeId: Int): Flow<RouteEntity?> = flow {
         emit(routeDao.getRouteWithDetails(routeId))
+    }.flowOn(Dispatchers.IO)
+
+    fun getRouteDetailData(routeId: Int): Flow<RouteDetailDataModel?> = flow {
+        val route = routeDao.getRouteWithDetails(routeId)
+        if (route != null) {
+            val company = companyDao.getCompanyById(route.companyId)
+            val companyName = company?.companyName ?: "Bus Company"
+            val stops = stopDao.getStopsForRouteList(routeId)
+            emit(RouteDetailDataModel(route, companyName, stops))
+        } else {
+            emit(null)
+        }
     }.flowOn(Dispatchers.IO)
 
     fun getStopsForRoute(routeId: Int): Flow<List<StopEntity>> {

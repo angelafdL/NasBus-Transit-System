@@ -15,6 +15,9 @@ interface StopDao {
     @Query("SELECT * FROM stops WHERE routeId = :routeId ORDER BY sequenceOrder ASC")
     fun getStopsForRoute(routeId: Int): Flow<List<StopEntity>>
 
+    @Query("SELECT * FROM stops WHERE routeId = :routeId ORDER BY sequenceOrder ASC")
+    suspend fun getStopsForRouteList(routeId: Int): List<StopEntity>
+
     @Query("SELECT DISTINCT stopName FROM stops ORDER BY stopName ASC")
     fun getDistinctStopNames(): Flow<List<String>>
 }
