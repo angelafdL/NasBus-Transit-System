@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+    <!-- Material 3 Blue Palette -->
+    <color name="colorPrimary">#1565C0</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorPrimaryContainer">#E3F2FD</color>
+    <color name="colorOnPrimaryContainer">#0D47A1</color>
+    <color name="colorSecondary">#0288D1</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorBackground">#F5F9FF</color>
+    <color name="colorOnSurface">#0D1B2A</color>
+    <color name="colorOnSurfaceVariant">#5C6B7A</color>
+    <color name="colorOutline">#B8C7D9</color>
+    <color name="colorError">#B3261E</color>
+    <color name="statusBarColor">#0D47A1</color>
+
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <!-- NasBus Theme Colors -->
-    <color name="brand_green">#1B5E20</color>
-    <color name="brand_green_light">#E8F5E9</color>
-    <color name="brand_orange">#FF6F00</color>
-    <color name="route_polyline">#1976D2</color>
-    <color name="segment_highlight">#E65100</color>
-    <color name="pin_origin">#2E7D32</color>
-    <color name="pin_destination">#C62828</color>
-    <color name="pin_stop">#1565C0</color>
+    <!-- Map Render Overlay Colors (DO NOT CHANGE) -->
+    <color name="map_route_polyline">#1976D2</color>
+    <color name="map_segment_highlight">#E65100</color>
+    <color name="map_pin_origin">#2E7D32</color>
+    <color name="map_pin_destination">#C62828</color>
+    <color name="map_pin_stop">#1565C0</color>
 </resources>

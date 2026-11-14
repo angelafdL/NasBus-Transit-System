@@ -2,7 +2,7 @@
     <string name="app_name">NasBus</string>
     <string name="title_login">Login</string>
     <string name="title_register">Register</string>
-    <string name="title_home">Home</string>
+    <string name="title_home">NasBus</string>
     <string name="title_search">Search Routes</string>
     <string name="title_map">Bus Map</string>
     <string name="title_schedule">Schedules</string>

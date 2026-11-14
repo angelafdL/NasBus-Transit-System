@@ -50,6 +50,7 @@ interface RouteDao {
             s1.stopName AS fromStopName,
             s2.stopName AS toStopName,
             (s2.distanceFromOriginKm - s1.distanceFromOriginKm) AS segmentDistanceKm,
+            r.distanceKm AS routeDistanceKm,
             ((s2.distanceFromOriginKm - s1.distanceFromOriginKm) * r.farePerKm) AS segmentFare,
             r.estimatedTravelTime AS estimatedTravelTime
         FROM routes r

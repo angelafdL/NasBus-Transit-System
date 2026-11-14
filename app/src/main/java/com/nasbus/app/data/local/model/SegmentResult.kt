@@ -7,6 +7,7 @@ data class SegmentResult(
     val fromStopName: String,
     val toStopName: String,
     val segmentDistanceKm: Double,
+    val routeDistanceKm: Double = 0.0,
     val segmentFare: Double,
     val estimatedTravelTime: String
 )

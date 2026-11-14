@@ -48,6 +48,29 @@
             app:destination="@id/loginFragment"
             app:popUpTo="@id/nav_graph"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_home_to_routeDetail"
+            app:destination="@id/routeDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/routeDetailFragment"
+        android:name="com.nasbus.app.ui.routedetail.RouteDetailFragment"
+        android:label="Route Detail"
+        tools:layout="@layout/fragment_route_detail">
+        <argument
+            android:name="routeId"
+            app:argType="integer"
+            android:defaultValue="1" />
+        <argument
+            android:name="fromStopName"
+            app:argType="string" />
+        <argument
+            android:name="toStopName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_routeDetail_to_routeMap"
+            app:destination="@id/routeMapFragment" />
     </fragment>
 
     <fragment

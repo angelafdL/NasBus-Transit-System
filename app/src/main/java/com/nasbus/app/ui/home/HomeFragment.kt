@@ -1,6 +1,8 @@
 package com.nasbus.app.ui.home
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,10 +13,11 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.nasbus.app.R
-import com.nasbus.app.data.local.model.RouteListItem
 import com.nasbus.app.databinding.FragmentHomeBinding
 import com.nasbus.app.util.SessionManager
+import com.nasbus.app.util.hideKeyboard
 import kotlinx.coroutines.launch
 
 class HomeFragment : Fragment() {
@@ -24,8 +27,9 @@ class HomeFragment : Fragment() {
 
     private val viewModel: HomeViewModel by viewModels()
     private lateinit var sessionManager: SessionManager
-    private var selectedRouteId: Int = 1
-    private var routeItems: List<RouteListItem> = emptyList()
+    private lateinit var resultAdapter: SegmentResultAdapter
+
+    private var isUpdatingTextProgrammatically = false
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -41,21 +45,17 @@ class HomeFragment : Fragment() {
         sessionManager = SessionManager(requireContext())
 
         setupToolbar()
+        setupRecyclerView()
+        setupSearchControls()
         observeViewModel()
-
-        binding.btnOpenMap.setOnClickListener {
-            val bundle = Bundle().apply {
-                putInt("routeId", selectedRouteId)
-            }
-            findNavController().navigate(R.id.action_home_to_routeMap, bundle)
-        }
     }
 
     private fun setupToolbar() {
         binding.toolbar.setOnMenuItemClickListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.action_logout -> {
-                    logout()
+                    sessionManager.clearSession()
+                    findNavController().navigate(R.id.action_home_to_login)
                     true
                 }
                 else -> false
@@ -63,38 +63,144 @@ class HomeFragment : Fragment() {
         }
     }
 
-    private fun logout() {
-        sessionManager.clearSession()
-        findNavController().navigate(R.id.action_home_to_login)
+    private fun setupRecyclerView() {
+        resultAdapter = SegmentResultAdapter { result ->
+            binding.root.hideKeyboard()
+            val bundle = Bundle().apply {
+                putInt("routeId", result.routeId)
+                putString("fromStopName", result.fromStopName)
+                putString("toStopName", result.toStopName)
+            }
+            findNavController().navigate(R.id.action_home_to_routeDetail, bundle)
+        }
+
+        binding.rvResults.apply {
+            layoutManager = LinearLayoutManager(requireContext())
+            adapter = resultAdapter
+        }
+    }
+
+    private fun setupSearchControls() {
+        if (viewModel.fromText.isNotEmpty() && binding.actvFrom.text.toString() != viewModel.fromText) {
+            isUpdatingTextProgrammatically = true
+            binding.actvFrom.setText(viewModel.fromText, false)
+            isUpdatingTextProgrammatically = false
+        }
+        if (viewModel.toText.isNotEmpty() && binding.actvTo.text.toString() != viewModel.toText) {
+            isUpdatingTextProgrammatically = true
+            binding.actvTo.setText(viewModel.toText, false)
+            isUpdatingTextProgrammatically = false
+        }
+
+        binding.actvFrom.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+            override fun afterTextChanged(s: Editable?) {
+                if (!isUpdatingTextProgrammatically) {
+                    clearErrors()
+                    viewModel.onFromTextChanged(s?.toString() ?: "")
+                }
+            }
+        })
+
+        binding.actvTo.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+            override fun afterTextChanged(s: Editable?) {
+                if (!isUpdatingTextProgrammatically) {
+                    clearErrors()
+                    viewModel.onToTextChanged(s?.toString() ?: "")
+                }
+            }
+        })
+
+        binding.actvFrom.setOnItemClickListener { _, _, _, _ ->
+            binding.root.hideKeyboard()
+        }
+
+        binding.actvTo.setOnItemClickListener { _, _, _, _ ->
+            binding.root.hideKeyboard()
+        }
+
+        binding.btnSwap.setOnClickListener {
+            binding.root.hideKeyboard()
+            clearErrors()
+
+            val targetRotation = binding.btnSwap.rotation + 180f
+            binding.btnSwap.animate().rotation(targetRotation).setDuration(250).start()
+
+            val currentFrom = binding.actvFrom.text.toString()
+            val currentTo = binding.actvTo.text.toString()
+
+            isUpdatingTextProgrammatically = true
+            binding.actvFrom.setText(currentTo, false)
+            binding.actvTo.setText(currentFrom, false)
+            isUpdatingTextProgrammatically = false
+
+            viewModel.swapStops()
+        }
     }
 
     private fun observeViewModel() {
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
-                viewModel.routes.collect { items ->
-                    routeItems = items
-                    if (items.isNotEmpty()) {
-                        val adapter = ArrayAdapter(
-                            requireContext(),
-                            android.R.layout.simple_dropdown_item_1line,
-                            items
-                        )
-                        binding.actvRouteSelector.setAdapter(adapter)
+                launch {
+                    viewModel.distinctStops.collect { stops ->
+                        if (stops.isNotEmpty() && isAdded) {
+                            val adapterFrom = ArrayAdapter(requireContext(), R.layout.item_dropdown_stop, stops)
+                            val adapterTo = ArrayAdapter(requireContext(), R.layout.item_dropdown_stop, stops)
+                            binding.actvFrom.setAdapter(adapterFrom)
+                            binding.actvTo.setAdapter(adapterTo)
+                        }
+                    }
+                }
 
-                        val defaultItem = items.find { it.routeId == 1 } ?: items.first()
-                        binding.actvRouteSelector.setText(defaultItem.displayText, false)
-                        selectedRouteId = defaultItem.routeId
+                launch {
+                    viewModel.uiState.collect { state ->
+                        when (state) {
+                            is HomeUiState.Idle -> {
+                                binding.progressBar.visibility = View.GONE
+                                binding.layoutEmptyState.visibility = View.GONE
+                                binding.rvResults.visibility = View.GONE
+                                clearErrors()
+                            }
+                            is HomeUiState.Loading -> {
+                                binding.progressBar.visibility = View.VISIBLE
+                                binding.layoutEmptyState.visibility = View.GONE
+                                binding.rvResults.visibility = View.GONE
+                                clearErrors()
+                            }
+                            is HomeUiState.Results -> {
+                                binding.progressBar.visibility = View.GONE
+                                binding.layoutEmptyState.visibility = View.GONE
+                                binding.rvResults.visibility = View.VISIBLE
+                                clearErrors()
+                                resultAdapter.submitList(state.list)
+                            }
+                            is HomeUiState.Empty -> {
+                                binding.progressBar.visibility = View.GONE
+                                binding.layoutEmptyState.visibility = View.VISIBLE
+                                binding.rvResults.visibility = View.GONE
+                                clearErrors()
+                            }
+                            is HomeUiState.Error -> {
+                                binding.progressBar.visibility = View.GONE
+                                binding.layoutEmptyState.visibility = View.GONE
+                                binding.rvResults.visibility = View.GONE
 
-                        binding.actvRouteSelector.setOnItemClickListener { _, _, position, _ ->
-                            val selected = adapter.getItem(position)
-                            if (selected != null) {
-                                selectedRouteId = selected.routeId
+                                binding.tilFrom.error = state.fromError
+                                binding.tilTo.error = state.toError
                             }
                         }
                     }
                 }
             }
         }
+    }
+
+    private fun clearErrors() {
+        binding.tilFrom.error = null
+        binding.tilTo.error = null
     }
 
     override fun onDestroyView() {
