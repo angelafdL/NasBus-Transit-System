@@ -7,9 +7,11 @@ import com.nasbus.app.data.local.entity.RouteEntity
 import com.nasbus.app.data.local.entity.StopEntity
 import com.nasbus.app.data.local.model.RouteDetailDataModel
 import com.nasbus.app.data.local.model.RouteListItem
+import com.nasbus.app.data.local.model.ScheduleWithDetails
 import com.nasbus.app.data.local.model.SegmentResult
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 
@@ -19,6 +21,7 @@ class RouteRepository(context: Context) {
     private val routeDao = db.routeDao()
     private val stopDao = db.stopDao()
     private val companyDao = db.companyDao()
+    private val scheduleDao = db.scheduleDao()
 
     fun getRouteById(routeId: Int): Flow<RouteEntity?> = flow {
         emit(routeDao.getRouteWithDetails(routeId))
@@ -30,11 +33,16 @@ class RouteRepository(context: Context) {
             val company = companyDao.getCompanyById(route.companyId)
             val companyName = company?.companyName ?: "Bus Company"
             val stops = stopDao.getStopsForRouteList(routeId)
-            emit(RouteDetailDataModel(route, companyName, stops))
+            val schedules = scheduleDao.getSchedulesForRoute(routeId).first()
+            emit(RouteDetailDataModel(route, companyName, stops, schedules))
         } else {
             emit(null)
         }
     }.flowOn(Dispatchers.IO)
+
+    fun getSchedulesForRoute(routeId: Int): Flow<List<ScheduleWithDetails>> {
+        return scheduleDao.getSchedulesForRoute(routeId)
+    }
 
     fun getStopsForRoute(routeId: Int): Flow<List<StopEntity>> {
         return stopDao.getStopsForRoute(routeId)

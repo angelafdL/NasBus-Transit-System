@@ -29,6 +29,27 @@ interface ScheduleDao {
         FROM schedules sch
         INNER JOIN routes r ON sch.routeId = r.routeId
         INNER JOIN companies c ON sch.companyId = c.companyId
+        WHERE sch.routeId = :routeId
+        ORDER BY (CAST(substr(sch.departureTime, 1, 2) AS INTEGER) * 60 + CAST(substr(sch.departureTime, 4, 2) AS INTEGER)) ASC
+    """)
+    fun getSchedulesForRoute(routeId: Int): Flow<List<ScheduleWithDetails>>
+
+    @Query("""
+        SELECT 
+            sch.scheduleId AS scheduleId,
+            sch.routeId AS routeId,
+            r.routeName AS routeName,
+            c.companyName AS companyName,
+            sch.busId AS busId,
+            r.originName AS originName,
+            r.destinationName AS destinationName,
+            sch.departureTime AS departureTime,
+            sch.arrivalTime AS arrivalTime,
+            sch.arrivalNextDay AS arrivalNextDay,
+            sch.estimatedFare AS estimatedFare
+        FROM schedules sch
+        INNER JOIN routes r ON sch.routeId = r.routeId
+        INNER JOIN companies c ON sch.companyId = c.companyId
         WHERE (:companyId IS NULL OR sch.companyId = :companyId)
           AND (
               :origin IS NULL 

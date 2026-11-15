@@ -204,11 +204,82 @@
                 android:textColor="?attr/colorOnSurfaceVariant"
                 android:textSize="11sp" />
 
-            <!-- 3. Stops Section -->
+            <!-- 3. TRIPS SECTION (Departure and Arrival Times) -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
+                android:text="Estimated departure and arrival"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_trips_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Times are estimates based on the terminal schedule."
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textSize="12sp" />
+
+            <!-- Single-Selection Filter Chips for Trips -->
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group_trips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:selectionRequired="true"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_trips_upcoming"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Upcoming (0)" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_trips_all"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All (0)" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_trips_previous"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Previous (0)" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:id="@+id/tv_empty_trips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="16dp"
+                android:text="No schedules available for this route."
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_trips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:nestedScrollingEnabled="false"
+                tools:listitem="@layout/item_route_trip" />
+
+            <!-- 4. Stops Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:text="Stops"
                 android:textColor="?attr/colorPrimary"
                 android:textSize="18sp"
@@ -226,7 +297,7 @@
 
     </androidx.core.widget.NestedScrollView>
 
-    <!-- 4. Pinned Bottom View on Map Button -->
+    <!-- 5. Pinned Bottom View on Map Button -->
     <FrameLayout
         android:id="@+id/layout_bottom_button"
         android:layout_width="match_parent"

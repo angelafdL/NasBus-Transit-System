@@ -6,5 +6,6 @@ import com.nasbus.app.data.local.entity.StopEntity
 data class RouteDetailDataModel(
     val route: RouteEntity,
     val companyName: String,
-    val stops: List<StopEntity>
+    val stops: List<StopEntity>,
+    val schedules: List<ScheduleWithDetails> = emptyList()
 )
