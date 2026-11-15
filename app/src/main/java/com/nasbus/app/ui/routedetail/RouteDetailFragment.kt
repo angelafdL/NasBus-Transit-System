@@ -13,10 +13,10 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.nasbus.app.R
 import com.nasbus.app.databinding.FragmentRouteDetailBinding
+import com.nasbus.app.util.FareCalculator
 import com.nasbus.app.util.TravelTimeEstimator
 import kotlinx.coroutines.launch
 import java.util.Locale
-import kotlin.math.roundToInt
 
 class RouteDetailFragment : Fragment() {
 
@@ -121,8 +121,11 @@ class RouteDetailFragment : Fragment() {
                                 data.route.distanceKm
                             }
 
-                            val segmentFare = segmentDist * data.route.farePerKm
-                            val fullRouteFare = data.route.distanceKm * data.route.farePerKm
+                            val segmentRegFare = FareCalculator.regularFare(segmentDist, data.route.farePerKm)
+                            val segmentDiscFare = FareCalculator.discountedFare(segmentRegFare)
+
+                            val fullRouteRegFare = FareCalculator.regularFare(data.route.distanceKm, data.route.farePerKm)
+                            val fullRouteDiscFare = FareCalculator.discountedFare(fullRouteRegFare)
 
                             val segmentMins = TravelTimeEstimator.estimateSegmentMinutes(
                                 segmentDistanceKm = segmentDist,
@@ -133,9 +136,10 @@ class RouteDetailFragment : Fragment() {
                             binding.tvSegmentTravelTime.text = TravelTimeEstimator.formatEstimatedSegmentTime(segmentMins)
                             binding.tvFullRouteTravelTime.text = "Full route: ${data.route.estimatedTravelTime}"
 
-                            binding.tvSegmentFare.text = "≈ ₱${segmentFare.roundToInt()}"
+                            binding.tvSegmentFare.text = FareCalculator.formatPeso(segmentRegFare)
                             binding.tvSegmentDistance.text = "${String.format(Locale.US, "%.1f", segmentDist)} km"
-                            binding.tvFullRouteFare.text = "Full route: ≈ ₱${fullRouteFare.roundToInt()}"
+                            binding.tvSegmentDiscountFare.text = "${FareCalculator.DISCOUNT_LABEL} (20% off)  ${FareCalculator.formatPeso(segmentDiscFare)}"
+                            binding.tvFullRouteFare.text = "Full route: ${FareCalculator.formatPeso(fullRouteRegFare)}  •  ${FareCalculator.DISCOUNT_LABEL} ${FareCalculator.formatPeso(fullRouteDiscFare)}"
 
                             // 3. Stops RecyclerView Timeline
                             stopAdapter.submitList(data.stops)

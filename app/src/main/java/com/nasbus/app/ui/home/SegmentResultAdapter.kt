@@ -7,9 +7,9 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.nasbus.app.data.local.model.SegmentResult
 import com.nasbus.app.databinding.ItemSegmentResultBinding
+import com.nasbus.app.util.FareCalculator
 import com.nasbus.app.util.TravelTimeEstimator
 import java.util.Locale
-import kotlin.math.roundToInt
 
 class SegmentResultAdapter(
     private val onItemClick: (SegmentResult) -> Unit
@@ -37,8 +37,11 @@ class SegmentResultAdapter(
             binding.tvRouteCompanySubtitle.text = "${item.routeName} • ${item.companyName}"
             binding.tvDistance.text = "Distance: ${String.format(Locale.US, "%.1f", item.segmentDistanceKm)} km"
 
-            val estimatedFarePesos = item.segmentFare.roundToInt()
-            binding.tvFare.text = "≈ ₱$estimatedFarePesos"
+            val regFare = FareCalculator.regularFare(item.segmentDistanceKm, item.segmentFare / item.segmentDistanceKm)
+            val discFare = FareCalculator.discountedFare(regFare)
+
+            binding.tvFare.text = FareCalculator.formatPeso(regFare)
+            binding.tvDiscountFare.text = "${FareCalculator.DISCOUNT_LABEL} ${FareCalculator.formatPeso(discFare)}"
 
             val estimatedMins = TravelTimeEstimator.estimateSegmentMinutes(
                 segmentDistanceKm = item.segmentDistanceKm,
