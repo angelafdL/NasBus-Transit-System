@@ -9,6 +9,7 @@ import com.nasbus.app.data.local.model.RouteDetailDataModel
 import com.nasbus.app.data.local.model.RouteListItem
 import com.nasbus.app.data.local.model.ScheduleWithDetails
 import com.nasbus.app.data.local.model.SegmentResult
+import com.nasbus.app.data.local.model.TripDetailDataModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
@@ -35,6 +36,21 @@ class RouteRepository(context: Context) {
             val stops = stopDao.getStopsForRouteList(routeId)
             val schedules = scheduleDao.getSchedulesForRoute(routeId).first()
             emit(RouteDetailDataModel(route, companyName, stops, schedules))
+        } else {
+            emit(null)
+        }
+    }.flowOn(Dispatchers.IO)
+
+    fun getTripDetailData(scheduleId: Int): Flow<TripDetailDataModel?> = flow {
+        val schedule = scheduleDao.getScheduleWithDetailsById(scheduleId)
+        if (schedule != null) {
+            val route = routeDao.getRouteWithDetails(schedule.routeId)
+            if (route != null) {
+                val stops = stopDao.getStopsForRouteList(schedule.routeId)
+                emit(TripDetailDataModel(schedule, route, stops))
+            } else {
+                emit(null)
+            }
         } else {
             emit(null)
         }

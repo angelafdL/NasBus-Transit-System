@@ -31,6 +31,29 @@ interface ScheduleDao {
         FROM schedules sch
         INNER JOIN routes r ON sch.routeId = r.routeId
         INNER JOIN companies c ON sch.companyId = c.companyId
+        WHERE sch.scheduleId = :scheduleId
+        LIMIT 1
+    """)
+    suspend fun getScheduleWithDetailsById(scheduleId: Int): ScheduleWithDetails?
+
+    @Query("""
+        SELECT 
+            sch.scheduleId AS scheduleId,
+            sch.routeId AS routeId,
+            r.routeName AS routeName,
+            c.companyName AS companyName,
+            sch.busId AS busId,
+            r.originName AS originName,
+            r.destinationName AS destinationName,
+            sch.departureTime AS departureTime,
+            sch.arrivalTime AS arrivalTime,
+            sch.arrivalNextDay AS arrivalNextDay,
+            sch.estimatedFare AS estimatedFare,
+            r.distanceKm AS distanceKm,
+            r.farePerKm AS farePerKm
+        FROM schedules sch
+        INNER JOIN routes r ON sch.routeId = r.routeId
+        INNER JOIN companies c ON sch.companyId = c.companyId
         WHERE sch.routeId = :routeId
         ORDER BY (CAST(substr(sch.departureTime, 1, 2) AS INTEGER) * 60 + CAST(substr(sch.departureTime, 4, 2) AS INTEGER)) ASC
     """)

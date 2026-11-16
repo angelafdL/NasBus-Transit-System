@@ -59,8 +59,22 @@
         android:label="Schedules"
         tools:layout="@layout/fragment_schedule">
         <action
-            android:id="@+id/action_schedule_to_routeDetail"
-            app:destination="@id/routeDetailFragment" />
+            android:id="@+id/action_schedule_to_tripDetail"
+            app:destination="@id/tripDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tripDetailFragment"
+        android:name="com.nasbus.app.ui.schedule.TripDetailFragment"
+        android:label="Trip Detail"
+        tools:layout="@layout/fragment_trip_detail">
+        <argument
+            android:name="scheduleId"
+            app:argType="integer"
+            android:defaultValue="1" />
+        <action
+            android:id="@+id/action_tripDetail_to_routeMap"
+            app:destination="@id/routeMapFragment" />
     </fragment>
 
     <fragment

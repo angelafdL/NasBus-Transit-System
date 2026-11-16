@@ -50,11 +50,9 @@ class ScheduleFragment : Fragment() {
         scheduleAdapter = ScheduleListAdapter { item ->
             binding.root.hideKeyboard()
             val bundle = Bundle().apply {
-                putInt("routeId", item.routeId)
-                putString("fromStopName", item.originName)
-                putString("toStopName", item.destinationName)
+                putInt("scheduleId", item.scheduleId)
             }
-            findNavController().navigate(R.id.action_schedule_to_routeDetail, bundle)
+            findNavController().navigate(R.id.action_schedule_to_tripDetail, bundle)
         }
 
         binding.rvSchedules.apply {
