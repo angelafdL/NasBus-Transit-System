@@ -44,23 +44,9 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         sessionManager = SessionManager(requireContext())
 
-        setupToolbar()
         setupRecyclerView()
         setupSearchControls()
         observeViewModel()
-    }
-
-    private fun setupToolbar() {
-        binding.toolbar.setOnMenuItemClickListener { menuItem ->
-            when (menuItem.itemId) {
-                R.id.action_logout -> {
-                    sessionManager.clearSession()
-                    findNavController().navigate(R.id.action_home_to_login)
-                    true
-                }
-                else -> false
-            }
-        }
     }
 
     private fun setupRecyclerView() {
