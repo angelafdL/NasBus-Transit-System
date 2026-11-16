@@ -17,6 +17,9 @@ interface RouteDao {
     @Query("SELECT * FROM routes WHERE routeId = :routeId LIMIT 1")
     suspend fun getRouteWithDetails(routeId: Int): RouteEntity?
 
+    @Query("SELECT * FROM routes ORDER BY routeId ASC")
+    fun getAllRoutes(): Flow<List<RouteEntity>>
+
     @Query("SELECT * FROM routes WHERE companyId = :companyId ORDER BY routeId ASC")
     fun getByCompany(companyId: Int): Flow<List<RouteEntity>>
 

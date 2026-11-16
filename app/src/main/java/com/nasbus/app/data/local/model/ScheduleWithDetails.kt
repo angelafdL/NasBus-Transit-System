@@ -11,5 +11,7 @@ data class ScheduleWithDetails(
     val departureTime: String,
     val arrivalTime: String,
     val arrivalNextDay: Boolean,
-    val estimatedFare: Double
+    val estimatedFare: Double,
+    val distanceKm: Double = 0.0,
+    val farePerKm: Double = 0.0
 )

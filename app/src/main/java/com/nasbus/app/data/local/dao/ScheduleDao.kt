@@ -25,7 +25,9 @@ interface ScheduleDao {
             sch.departureTime AS departureTime,
             sch.arrivalTime AS arrivalTime,
             sch.arrivalNextDay AS arrivalNextDay,
-            sch.estimatedFare AS estimatedFare
+            sch.estimatedFare AS estimatedFare,
+            r.distanceKm AS distanceKm,
+            r.farePerKm AS farePerKm
         FROM schedules sch
         INNER JOIN routes r ON sch.routeId = r.routeId
         INNER JOIN companies c ON sch.companyId = c.companyId
@@ -46,7 +48,9 @@ interface ScheduleDao {
             sch.departureTime AS departureTime,
             sch.arrivalTime AS arrivalTime,
             sch.arrivalNextDay AS arrivalNextDay,
-            sch.estimatedFare AS estimatedFare
+            sch.estimatedFare AS estimatedFare,
+            r.distanceKm AS distanceKm,
+            r.farePerKm AS farePerKm
         FROM schedules sch
         INNER JOIN routes r ON sch.routeId = r.routeId
         INNER JOIN companies c ON sch.companyId = c.companyId

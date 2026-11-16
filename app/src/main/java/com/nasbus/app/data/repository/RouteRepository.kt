@@ -44,6 +44,20 @@ class RouteRepository(context: Context) {
         return scheduleDao.getSchedulesForRoute(routeId)
     }
 
+    fun filterSchedules(
+        companyId: Int?,
+        origin: String?,
+        destination: String?,
+        departAfter: String?,
+        arriveBefore: String?
+    ): Flow<List<ScheduleWithDetails>> {
+        return scheduleDao.filterSchedules(companyId, origin, destination, departAfter, arriveBefore)
+    }
+
+    fun getAllRoutes(): Flow<List<RouteEntity>> {
+        return routeDao.getAllRoutes()
+    }
+
     fun getStopsForRoute(routeId: Int): Flow<List<StopEntity>> {
         return stopDao.getStopsForRoute(routeId)
     }
