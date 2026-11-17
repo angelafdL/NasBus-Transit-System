@@ -204,12 +204,12 @@
                 android:textColor="?attr/colorOnSurfaceVariant"
                 android:textSize="11sp" />
 
-            <!-- 3. TRIPS SECTION (Departure and Arrival Times) -->
+            <!-- 3. TRIPS SECTION (Buses for your trip) -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="Estimated departure and arrival"
+                android:text="Buses for your trip"
                 android:textColor="?attr/colorPrimary"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -219,42 +219,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:text="Times are estimates based on the terminal schedule."
+                android:text="Based on the current time. Times are estimates."
                 android:textColor="?attr/colorOnSurfaceVariant"
                 android:textSize="12sp" />
-
-            <!-- Single-Selection Filter Chips for Trips -->
-            <com.google.android.material.chip.ChipGroup
-                android:id="@+id/chip_group_trips"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                app:selectionRequired="true"
-                app:singleSelection="true">
-
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chip_trips_upcoming"
-                    style="@style/Widget.Material3.Chip.Filter"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checked="true"
-                    android:text="Upcoming (0)" />
-
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chip_trips_all"
-                    style="@style/Widget.Material3.Chip.Filter"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="All (0)" />
-
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chip_trips_previous"
-                    style="@style/Widget.Material3.Chip.Filter"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Previous (0)" />
-
-            </com.google.android.material.chip.ChipGroup>
 
             <TextView
                 android:id="@+id/tv_empty_trips"

@@ -31,12 +31,16 @@ class RouteTripAdapter : ListAdapter<RouteTripItem, RouteTripAdapter.TripViewHol
         fun bind(item: RouteTripItem) {
             binding.chipBusId.text = item.busId
             binding.badgeNextBus.visibility = if (item.isNextBus) View.VISIBLE else View.GONE
-            binding.tvDeparts.text = "Departs ${item.fromStopName} ~ ${item.departsFormatted}"
+            binding.tvDeparts.text = "Departs ${item.fromStopName} ~ ${item.departsFormatted} (${item.countdownText})"
             binding.tvArrives.text = "Arrives ${item.toStopName} ~ ${item.arrivesFormatted}"
-            binding.tvLeavesOrigin.text = "Leaves ${item.originName} at ${item.originDepartureTimeFormatted}"
 
-            // Dim past trips today
-            binding.cardTrip.alpha = if (item.isPastToday && !item.isNextBus) 0.5f else 1.0f
+            if (item.isOnTheWay) {
+                binding.tvLeavesOrigin.text = "On the way"
+            } else {
+                binding.tvLeavesOrigin.text = "Leaves ${item.originName} at ${item.originDepartureTimeFormatted}"
+            }
+
+            binding.cardTrip.alpha = 1.0f
         }
     }
 

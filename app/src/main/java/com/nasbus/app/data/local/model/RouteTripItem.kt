@@ -6,10 +6,11 @@ data class RouteTripItem(
     val fromStopName: String,
     val toStopName: String,
     val departsFormatted: String,
+    val countdownText: String,
     val arrivesFormatted: String,
     val originName: String,
     val originDepartureTimeFormatted: String,
     val departsMinutesSinceMidnight: Int,
-    val isNextBus: Boolean = false,
-    val isPastToday: Boolean = false
+    val isOnTheWay: Boolean,
+    val isNextBus: Boolean = false
 )

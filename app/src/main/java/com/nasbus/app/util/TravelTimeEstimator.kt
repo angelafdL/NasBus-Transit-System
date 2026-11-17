@@ -1,9 +1,13 @@
 package com.nasbus.app.util
 
+import com.nasbus.app.data.local.model.RouteTripItem
+import com.nasbus.app.data.local.model.ScheduleWithDetails
 import java.util.Locale
 import kotlin.math.roundToInt
 
 object TravelTimeEstimator {
+
+    const val MAX_TRIPS = 5
 
     /**
      * Parses route estimated travel time strings like "3 to 4 hours", "1 to 2 hours", "4 to 5 hours"
@@ -62,6 +66,22 @@ object TravelTimeEstimator {
     }
 
     /**
+     * Formats countdown text given minute difference between departure and current time.
+     * "now", "in 25 min", "in 1 hr 10 min", etc.
+     */
+    fun formatCountdown(diffMinutes: Int): String {
+        return when {
+            diffMinutes <= 0 -> "now"
+            diffMinutes < 60 -> "in $diffMinutes min"
+            else -> {
+                val hours = diffMinutes / 60
+                val mins = diffMinutes % 60
+                if (mins > 0) "in $hours hr $mins min" else "in $hours hr"
+            }
+        }
+    }
+
+    /**
      * Estimates time in minutes since midnight at a specific stop given schedule departure,
      * stop distance, total route distance, and route travel time string.
      */
@@ -80,6 +100,64 @@ object TravelTimeEstimator {
         val roundedTo5 = ((rawTotalMins / 5.0).roundToInt() * 5)
 
         return roundedTo5
+    }
+
+    /**
+     * Pure function returning ONLY relevant trips for the current device time (max 5),
+     * with their departure, arrival, countdown, status line, and Next bus badge indicator.
+     */
+    fun getRelevantTripItems(
+        schedules: List<ScheduleWithDetails>,
+        routeDistanceKm: Double,
+        routeEstimatedTravelTime: String,
+        routeOriginName: String,
+        routeDestinationName: String,
+        fromStopName: String,
+        toStopName: String,
+        fromStopDistanceFromOriginKm: Double,
+        toStopDistanceFromOriginKm: Double,
+        currentMinutes: Int
+    ): List<RouteTripItem> {
+        val relevant = schedules.mapNotNull { sch ->
+            val depMins = estimateTimeAtStop(
+                sch.departureTime,
+                fromStopDistanceFromOriginKm,
+                routeDistanceKm,
+                routeEstimatedTravelTime
+            )
+
+            // A trip is relevant when estimated clock time at From stop is >= currentMinutes
+            if (depMins < currentMinutes) return@mapNotNull null
+
+            val arrMins = estimateTimeAtStop(
+                sch.departureTime,
+                toStopDistanceFromOriginKm,
+                routeDistanceKm,
+                routeEstimatedTravelTime
+            )
+            val originDepMins = parseClockToMinutes(sch.departureTime)
+            val diffMins = depMins - currentMinutes
+            val isOnTheWay = originDepMins <= currentMinutes
+
+            RouteTripItem(
+                scheduleId = sch.scheduleId,
+                busId = sch.busId,
+                fromStopName = if (fromStopName.isNotBlank()) fromStopName else routeOriginName,
+                toStopName = if (toStopName.isNotBlank()) toStopName else routeDestinationName,
+                departsFormatted = formatClock(depMins),
+                countdownText = formatCountdown(diffMins),
+                arrivesFormatted = formatClock(arrMins),
+                originName = routeOriginName,
+                originDepartureTimeFormatted = formatClock(originDepMins),
+                departsMinutesSinceMidnight = depMins,
+                isOnTheWay = isOnTheWay,
+                isNextBus = false
+            )
+        }.take(MAX_TRIPS)
+
+        return relevant.mapIndexed { index, item ->
+            item.copy(isNextBus = (index == 0))
+        }
     }
 
     /**

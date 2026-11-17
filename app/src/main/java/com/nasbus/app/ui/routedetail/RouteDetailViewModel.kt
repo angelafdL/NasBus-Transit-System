@@ -11,12 +11,6 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
-enum class TripFilter {
-    UPCOMING,
-    ALL,
-    PREVIOUS
-}
-
 sealed class RouteDetailUiState {
     object Loading : RouteDetailUiState()
     data class Success(
@@ -33,8 +27,6 @@ class RouteDetailViewModel(application: Application) : AndroidViewModel(applicat
 
     private val _uiState = MutableStateFlow<RouteDetailUiState>(RouteDetailUiState.Loading)
     val uiState: StateFlow<RouteDetailUiState> = _uiState.asStateFlow()
-
-    var selectedTripFilter: TripFilter = TripFilter.UPCOMING
 
     fun loadRouteDetail(routeId: Int, fromStopName: String, toStopName: String) {
         viewModelScope.launch(Dispatchers.IO) {
