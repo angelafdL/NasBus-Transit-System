@@ -1,6 +1,8 @@
 package com.nasbus.app.ui.schedule
 
 import android.app.Application
+import android.os.SystemClock
+import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.nasbus.app.data.local.entity.CompanyEntity
@@ -9,10 +11,29 @@ import com.nasbus.app.data.local.model.ScheduleWithDetails
 import com.nasbus.app.data.repository.RouteRepository
 import com.nasbus.app.util.TravelTimeEstimator
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.catch
+import kotlinx.coroutines.flow.flatMapLatest
+import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.flow.flowOn
+import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
+
+data class ScheduleFilterState(
+    val selectedCompany: CompanyEntity? = null,
+    val selectedFrom: String? = null,
+    val selectedTo: String? = null,
+    val departAfter24h: String? = null,
+    val departAfter12h: String? = null,
+    val arriveBefore24h: String? = null,
+    val arriveBefore12h: String? = null,
+    val isFilterExpanded: Boolean = true
+)
 
 sealed class ScheduleUiState {
     object Loading : ScheduleUiState()
@@ -28,25 +49,8 @@ class ScheduleViewModel(application: Application) : AndroidViewModel(application
 
     private val repository = RouteRepository(application)
 
-    private val _uiState = MutableStateFlow<ScheduleUiState>(ScheduleUiState.Loading)
-    val uiState: StateFlow<ScheduleUiState> = _uiState.asStateFlow()
-
-    // Filter choices state
-    var selectedCompany: CompanyEntity? = null
-        private set
-    var selectedFrom: String? = null
-        private set
-    var selectedTo: String? = null
-        private set
-    var departAfter24h: String? = null
-        private set
-    var departAfter12h: String? = null
-        private set
-    var arriveBefore24h: String? = null
-        private set
-    var arriveBefore12h: String? = null
-        private set
-    var isFilterExpanded: Boolean = true
+    private val _filterState = MutableStateFlow(ScheduleFilterState())
+    val filterState: StateFlow<ScheduleFilterState> = _filterState.asStateFlow()
 
     private val _allCompanies = MutableStateFlow<List<CompanyEntity>>(emptyList())
     val allCompanies: StateFlow<List<CompanyEntity>> = _allCompanies.asStateFlow()
@@ -60,11 +64,42 @@ class ScheduleViewModel(application: Application) : AndroidViewModel(application
     private val _availableToStops = MutableStateFlow<List<String>>(emptyList())
     val availableToStops: StateFlow<List<String>> = _availableToStops.asStateFlow()
 
+    @OptIn(ExperimentalCoroutinesApi::class)
+    val uiState: StateFlow<ScheduleUiState> = filterState
+        .flatMapLatest { state ->
+            if (state.departAfter24h != null && state.arriveBefore24h != null) {
+                val depMins = TravelTimeEstimator.parseClockToMinutes(state.departAfter24h)
+                val arrMins = TravelTimeEstimator.parseClockToMinutes(state.arriveBefore24h)
+                if (depMins > arrMins) {
+                    return@flatMapLatest flowOf(ScheduleUiState.ValidationError("Depart after must be earlier than Arrive before"))
+                }
+            }
+            flow {
+                emit(ScheduleUiState.Loading)
+                repository.filterSchedules(
+                    companyId = state.selectedCompany?.companyId,
+                    origin = state.selectedFrom,
+                    destination = state.selectedTo,
+                    departAfter = state.departAfter24h,
+                    arriveBefore = state.arriveBefore24h
+                ).collect { list ->
+                    emit(ScheduleUiState.Success(list, list.size))
+                }
+            }.catch { e ->
+                emit(ScheduleUiState.Error(e.localizedMessage ?: "Failed to load schedules"))
+            }.flowOn(Dispatchers.IO)
+        }
+        .stateIn(
+            scope = viewModelScope,
+            started = SharingStarted.WhileSubscribed(5000),
+            initialValue = ScheduleUiState.Loading
+        )
+
     init {
-        loadMetadataAndObserve()
+        loadMetadata()
     }
 
-    private fun loadMetadataAndObserve() {
+    private fun loadMetadata() {
         viewModelScope.launch(Dispatchers.IO) {
             launch {
                 repository.getAllCompanies().collect { companies ->
@@ -78,12 +113,11 @@ class ScheduleViewModel(application: Application) : AndroidViewModel(application
                 }
             }
         }
-        applyFilters()
     }
 
     private fun updateAvailableTerminals() {
         val routes = _allRoutes.value
-        val companyId = selectedCompany?.companyId
+        val companyId = _filterState.value.selectedCompany?.companyId
 
         val filteredRoutes = if (companyId != null) {
             routes.filter { it.companyId == companyId }
@@ -91,111 +125,106 @@ class ScheduleViewModel(application: Application) : AndroidViewModel(application
             routes
         }
 
-        val origins = filteredRoutes.map { it.originName }.distinct().sorted()
-        val destinations = filteredRoutes.map { it.destinationName }.distinct().sorted()
+        // Distinct UNION of originName and destinationName so every terminal is available in both dropdowns
+        val allTerminals = filteredRoutes.flatMap { listOf(it.originName, it.destinationName) }
+            .distinct()
+            .sorted()
 
-        _availableFromStops.value = listOf("Any") + origins
-        _availableToStops.value = listOf("Any") + destinations
+        _availableFromStops.value = listOf("Any") + allTerminals
+        _availableToStops.value = listOf("Any") + allTerminals
 
-        if (selectedFrom != null && selectedFrom != "Any" && !origins.contains(selectedFrom)) {
-            selectedFrom = null
-        }
-        if (selectedTo != null && selectedTo != "Any" && !destinations.contains(selectedTo)) {
-            selectedTo = null
+        val currentFrom = _filterState.value.selectedFrom
+        val currentTo = _filterState.value.selectedTo
+
+        val newFrom = if (currentFrom != null && currentFrom != "Any" && !allTerminals.contains(currentFrom)) null else currentFrom
+        val newTo = if (currentTo != null && currentTo != "Any" && !allTerminals.contains(currentTo)) null else currentTo
+
+        if (newFrom != currentFrom || newTo != currentTo) {
+            _filterState.value = _filterState.value.copy(
+                selectedFrom = newFrom,
+                selectedTo = newTo
+            )
         }
     }
 
     fun onCompanySelected(companyName: String) {
-        selectedCompany = if (companyName == "All companies" || companyName.isBlank()) {
+        val selected = if (companyName == "All companies" || companyName.isBlank()) {
             null
         } else {
             _allCompanies.value.find { it.companyName.equals(companyName, ignoreCase = true) }
         }
+        _filterState.value = _filterState.value.copy(selectedCompany = selected)
         updateAvailableTerminals()
-        applyFilters()
     }
 
     fun onFromSelected(from: String) {
-        selectedFrom = if (from == "Any" || from.isBlank()) null else from
-        applyFilters()
+        val newFrom = if (from == "Any" || from.isBlank()) null else from
+        _filterState.value = _filterState.value.copy(selectedFrom = newFrom)
     }
 
     fun onToSelected(to: String) {
-        selectedTo = if (to == "Any" || to.isBlank()) null else to
-        applyFilters()
+        val newTo = if (to == "Any" || to.isBlank()) null else to
+        _filterState.value = _filterState.value.copy(selectedTo = newTo)
     }
 
-    fun swapTerminals() {
-        val temp = selectedFrom
-        selectedFrom = selectedTo
-        selectedTo = temp
-        applyFilters()
+    fun swapFromTo() {
+        val currentFrom = _filterState.value.selectedFrom
+        val currentTo = _filterState.value.selectedTo
+
+        _filterState.value = _filterState.value.copy(
+            selectedFrom = currentTo,
+            selectedTo = currentFrom
+        )
+        updateAvailableTerminals()
+
+        Log.d("Schedule", "swap state updated at ${SystemClock.elapsedRealtime()}")
+        Log.d("Schedule", "swap: from=${_filterState.value.selectedFrom} to=${_filterState.value.selectedTo} company=${_filterState.value.selectedCompany?.companyName}")
     }
 
     fun setDepartAfter(hourOfDay: Int, minute: Int) {
         val mins = hourOfDay * 60 + minute
-        departAfter24h = String.format("%02d:%02d", hourOfDay, minute)
-        departAfter12h = TravelTimeEstimator.formatClock(mins)
-        applyFilters()
+        val h24 = String.format("%02d:%02d", hourOfDay, minute)
+        val h12 = TravelTimeEstimator.formatClock(mins)
+        _filterState.value = _filterState.value.copy(
+            departAfter24h = h24,
+            departAfter12h = h12
+        )
     }
 
     fun clearDepartAfter() {
-        departAfter24h = null
-        departAfter12h = null
-        applyFilters()
+        _filterState.value = _filterState.value.copy(
+            departAfter24h = null,
+            departAfter12h = null
+        )
     }
 
     fun setArriveBefore(hourOfDay: Int, minute: Int) {
         val mins = hourOfDay * 60 + minute
-        arriveBefore24h = String.format("%02d:%02d", hourOfDay, minute)
-        arriveBefore12h = TravelTimeEstimator.formatClock(mins)
-        applyFilters()
+        val h24 = String.format("%02d:%02d", hourOfDay, minute)
+        val h12 = TravelTimeEstimator.formatClock(mins)
+        _filterState.value = _filterState.value.copy(
+            arriveBefore24h = h24,
+            arriveBefore12h = h12
+        )
     }
 
     fun clearArriveBefore() {
-        arriveBefore24h = null
-        arriveBefore12h = null
-        applyFilters()
+        _filterState.value = _filterState.value.copy(
+            arriveBefore24h = null,
+            arriveBefore12h = null
+        )
+    }
+
+    fun toggleFilterExpanded() {
+        _filterState.value = _filterState.value.copy(
+            isFilterExpanded = !_filterState.value.isFilterExpanded
+        )
     }
 
     fun clearAllFilters() {
-        selectedCompany = null
-        selectedFrom = null
-        selectedTo = null
-        departAfter24h = null
-        departAfter12h = null
-        arriveBefore24h = null
-        arriveBefore12h = null
+        _filterState.value = ScheduleFilterState(
+            isFilterExpanded = _filterState.value.isFilterExpanded
+        )
         updateAvailableTerminals()
-        applyFilters()
-    }
-
-    fun applyFilters() {
-        // Validate time range if both set
-        if (departAfter24h != null && arriveBefore24h != null) {
-            val depMins = TravelTimeEstimator.parseClockToMinutes(departAfter24h!!)
-            val arrMins = TravelTimeEstimator.parseClockToMinutes(arriveBefore24h!!)
-            if (depMins > arrMins) {
-                _uiState.value = ScheduleUiState.ValidationError("Depart after must be earlier than Arrive before")
-                return
-            }
-        }
-
-        viewModelScope.launch(Dispatchers.IO) {
-            _uiState.value = ScheduleUiState.Loading
-            try {
-                repository.filterSchedules(
-                    companyId = selectedCompany?.companyId,
-                    origin = selectedFrom,
-                    destination = selectedTo,
-                    departAfter = departAfter24h,
-                    arriveBefore = arriveBefore24h
-                ).collect { list ->
-                    _uiState.value = ScheduleUiState.Success(list, list.size)
-                }
-            } catch (e: Exception) {
-                _uiState.value = ScheduleUiState.Error(e.localizedMessage ?: "Failed to load schedules")
-            }
-        }
     }
 }

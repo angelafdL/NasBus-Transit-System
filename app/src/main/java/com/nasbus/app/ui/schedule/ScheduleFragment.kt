@@ -1,6 +1,8 @@
 package com.nasbus.app.ui.schedule
 
 import android.os.Bundle
+import android.os.SystemClock
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -26,6 +28,10 @@ class ScheduleFragment : Fragment() {
 
     private val viewModel: ScheduleViewModel by viewModels()
     private lateinit var scheduleAdapter: ScheduleListAdapter
+
+    private var fromAdapter: ArrayAdapter<String>? = null
+    private var toAdapter: ArrayAdapter<String>? = null
+    private var companyAdapter: ArrayAdapter<String>? = null
 
     private var isUpdatingTextProgrammatically = false
 
@@ -65,8 +71,7 @@ class ScheduleFragment : Fragment() {
         // Collapsible Filter Card Header
         binding.layoutFilterHeader.setOnClickListener {
             binding.root.hideKeyboard()
-            viewModel.isFilterExpanded = !viewModel.isFilterExpanded
-            updateFilterCardExpandState()
+            viewModel.toggleFilterExpanded()
         }
 
         // Clear Filters Buttons
@@ -79,31 +84,44 @@ class ScheduleFragment : Fragment() {
             viewModel.clearAllFilters()
         }
 
-        // Swap Terminals Button
+        // Swap Terminals Button (200ms duration, multi-tap cancel)
         binding.btnSwap.setOnClickListener {
             binding.root.hideKeyboard()
+            Log.d("Schedule", "swap tapped")
+
+            binding.btnSwap.animate().cancel()
             val targetRotation = binding.btnSwap.rotation + 180f
-            binding.btnSwap.animate().rotation(targetRotation).setDuration(250).start()
-            viewModel.swapTerminals()
+            binding.btnSwap.animate().rotation(targetRotation).setDuration(200).start()
+
+            viewModel.swapFromTo()
         }
 
         // Dropdowns Click Listeners
         binding.actvCompany.setOnItemClickListener { _, _, position, _ ->
             binding.root.hideKeyboard()
-            val companyName = binding.actvCompany.adapter.getItem(position).toString()
-            viewModel.onCompanySelected(companyName)
+            val adapter = companyAdapter ?: return@setOnItemClickListener
+            if (position in 0 until adapter.count) {
+                val companyName = adapter.getItem(position).toString()
+                viewModel.onCompanySelected(companyName)
+            }
         }
 
         binding.actvFrom.setOnItemClickListener { _, _, position, _ ->
             binding.root.hideKeyboard()
-            val from = binding.actvFrom.adapter.getItem(position).toString()
-            viewModel.onFromSelected(from)
+            val adapter = fromAdapter ?: return@setOnItemClickListener
+            if (position in 0 until adapter.count) {
+                val from = adapter.getItem(position).toString()
+                viewModel.onFromSelected(from)
+            }
         }
 
         binding.actvTo.setOnItemClickListener { _, _, position, _ ->
             binding.root.hideKeyboard()
-            val to = binding.actvTo.adapter.getItem(position).toString()
-            viewModel.onToSelected(to)
+            val adapter = toAdapter ?: return@setOnItemClickListener
+            if (position in 0 until adapter.count) {
+                val to = adapter.getItem(position).toString()
+                viewModel.onToSelected(to)
+            }
         }
 
         // Time Pickers
@@ -146,56 +164,74 @@ class ScheduleFragment : Fragment() {
         picker.show(childFragmentManager, "time_picker")
     }
 
-    private fun updateFilterCardExpandState() {
-        val isExpanded = viewModel.isFilterExpanded
-        binding.layoutFilterContent.visibility = if (isExpanded) View.VISIBLE else View.GONE
-        binding.tvFilterArrow.text = if (isExpanded) "▲" else "▼"
-    }
-
     private fun observeViewModel() {
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                // Collect Metadata Dropdowns efficiently
                 launch {
-                    viewModel.allCompanies.collect { companies ->
-                        if (isAdded) {
-                            val companyNames = listOf("All companies") + companies.map { it.companyName }
-                            val adapter = ArrayAdapter(requireContext(), R.layout.item_dropdown_stop, companyNames)
-                            binding.actvCompany.setAdapter(adapter)
+                    viewModel.allCompanies
+                        .collect { companies ->
+                            if (isAdded) {
+                                val companyNames = listOf("All companies") + companies.map { it.companyName }
+                                if (companyAdapter == null) {
+                                    companyAdapter = ArrayAdapter(requireContext(), R.layout.item_dropdown_stop, ArrayList(companyNames))
+                                    binding.actvCompany.setAdapter(companyAdapter)
+                                } else {
+                                    companyAdapter?.clear()
+                                    companyAdapter?.addAll(companyNames)
+                                }
+                            }
                         }
-                    }
                 }
 
                 launch {
-                    viewModel.availableFromStops.collect { stops ->
-                        if (isAdded) {
-                            val adapter = ArrayAdapter(requireContext(), R.layout.item_dropdown_stop, stops)
-                            binding.actvFrom.setAdapter(adapter)
+                    viewModel.availableFromStops
+                        .collect { stops ->
+                            if (isAdded) {
+                                if (fromAdapter == null) {
+                                    fromAdapter = ArrayAdapter(requireContext(), R.layout.item_dropdown_stop, ArrayList(stops))
+                                    binding.actvFrom.setAdapter(fromAdapter)
+                                } else {
+                                    fromAdapter?.clear()
+                                    fromAdapter?.addAll(stops)
+                                }
+                            }
                         }
-                    }
                 }
 
                 launch {
-                    viewModel.availableToStops.collect { stops ->
-                        if (isAdded) {
-                            val adapter = ArrayAdapter(requireContext(), R.layout.item_dropdown_stop, stops)
-                            binding.actvTo.setAdapter(adapter)
+                    viewModel.availableToStops
+                        .collect { stops ->
+                            if (isAdded) {
+                                if (toAdapter == null) {
+                                    toAdapter = ArrayAdapter(requireContext(), R.layout.item_dropdown_stop, ArrayList(stops))
+                                    binding.actvTo.setAdapter(toAdapter)
+                                } else {
+                                    toAdapter?.clear()
+                                    toAdapter?.addAll(stops)
+                                }
+                            }
                         }
-                    }
                 }
 
+                // Render Filter UI State instantly on state changes
+                launch {
+                    viewModel.filterState
+                        .collect { state ->
+                            renderFilterState(state)
+                        }
+                }
+
+                // Collect Results UI State independently
                 launch {
                     viewModel.uiState.collect { state ->
-                        updateUiFromViewModelState()
-
                         when (state) {
                             is ScheduleUiState.Loading -> {
-                                binding.progressBar.visibility = View.VISIBLE
-                                binding.rvSchedules.visibility = View.GONE
-                                binding.layoutEmptyState.visibility = View.GONE
+                                binding.progressLoadingThin.visibility = View.VISIBLE
                                 binding.tvValidationError.visibility = View.GONE
                             }
                             is ScheduleUiState.ValidationError -> {
-                                binding.progressBar.visibility = View.GONE
+                                binding.progressLoadingThin.visibility = View.GONE
                                 binding.rvSchedules.visibility = View.GONE
                                 binding.layoutEmptyState.visibility = View.GONE
                                 binding.tvValidationError.visibility = View.VISIBLE
@@ -203,23 +239,25 @@ class ScheduleFragment : Fragment() {
                                 binding.tvResultCount.text = "0 trips found"
                             }
                             is ScheduleUiState.Error -> {
-                                binding.progressBar.visibility = View.GONE
+                                binding.progressLoadingThin.visibility = View.GONE
+                                binding.tvValidationError.visibility = View.GONE
                                 binding.rvSchedules.visibility = View.GONE
                                 binding.layoutEmptyState.visibility = View.VISIBLE
-                                binding.tvValidationError.visibility = View.GONE
                             }
                             is ScheduleUiState.Success -> {
-                                binding.progressBar.visibility = View.GONE
+                                binding.progressLoadingThin.visibility = View.GONE
                                 binding.tvValidationError.visibility = View.GONE
 
                                 val list = state.list
                                 val count = state.totalCount
                                 binding.tvResultCount.text = "$count trip${if (count == 1) "" else "s"} found"
 
+                                scheduleAdapter.submitList(list)
+                                Log.d("Schedule", "swap results ready at ${SystemClock.elapsedRealtime()} (${list.size} rows)")
+
                                 if (list.isNotEmpty()) {
                                     binding.rvSchedules.visibility = View.VISIBLE
                                     binding.layoutEmptyState.visibility = View.GONE
-                                    scheduleAdapter.submitList(list)
                                 } else {
                                     binding.rvSchedules.visibility = View.GONE
                                     binding.layoutEmptyState.visibility = View.VISIBLE
@@ -232,28 +270,34 @@ class ScheduleFragment : Fragment() {
         }
     }
 
-    private fun updateUiFromViewModelState() {
+    private fun renderFilterState(state: ScheduleFilterState) {
         isUpdatingTextProgrammatically = true
 
-        val companyText = viewModel.selectedCompany?.companyName ?: "All companies"
+        val companyText = state.selectedCompany?.companyName ?: "All companies"
         if (binding.actvCompany.text.toString() != companyText) {
             binding.actvCompany.setText(companyText, false)
         }
 
-        val fromText = viewModel.selectedFrom ?: "Any"
-        if (binding.actvFrom.text.toString() != fromText) {
+        val fromText = state.selectedFrom ?: "Any"
+        val currentFromDisplayed = binding.actvFrom.text.toString()
+        if (currentFromDisplayed != fromText) {
             binding.actvFrom.setText(fromText, false)
+            Log.d("Schedule", "swap text rendered at ${SystemClock.elapsedRealtime()}")
         }
 
-        val toText = viewModel.selectedTo ?: "Any"
-        if (binding.actvTo.text.toString() != toText) {
+        val toText = state.selectedTo ?: "Any"
+        val currentToDisplayed = binding.actvTo.text.toString()
+        if (currentToDisplayed != toText) {
             binding.actvTo.setText(toText, false)
+            Log.d("Schedule", "swap text rendered at ${SystemClock.elapsedRealtime()}")
         }
 
-        binding.etDepartAfter.setText(viewModel.departAfter12h ?: "")
-        binding.etArriveBefore.setText(viewModel.arriveBefore12h ?: "")
+        binding.etDepartAfter.setText(state.departAfter12h ?: "")
+        binding.etArriveBefore.setText(state.arriveBefore12h ?: "")
 
-        updateFilterCardExpandState()
+        val isExpanded = state.isFilterExpanded
+        binding.layoutFilterContent.visibility = if (isExpanded) View.VISIBLE else View.GONE
+        binding.tvFilterArrow.text = if (isExpanded) "▲" else "▼"
 
         isUpdatingTextProgrammatically = false
     }
