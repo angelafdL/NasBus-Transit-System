@@ -50,8 +50,12 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
 
     private fun loadStops() {
         viewModelScope.launch(Dispatchers.IO) {
-            repository.getDistinctStops().collect { stops ->
-                _distinctStops.value = stops
+            try {
+                repository.getDistinctStops().collect { stops ->
+                    _distinctStops.value = stops
+                }
+            } catch (e: Exception) {
+                _distinctStops.value = emptyList()
             }
         }
     }
@@ -87,50 +91,56 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
         searchJob = viewModelScope.launch(Dispatchers.IO) {
             delay(300) // 300 ms debounce
 
-            val availableStops = _distinctStops.value
-            val fromValid = availableStops.any { it.equals(from, ignoreCase = true) }
-            val toValid = availableStops.any { it.equals(to, ignoreCase = true) }
+            try {
+                val availableStops = _distinctStops.value
+                val fromValid = availableStops.any { it.equals(from, ignoreCase = true) }
+                val toValid = availableStops.any { it.equals(to, ignoreCase = true) }
 
-            if (!fromValid) {
-                _uiState.value = HomeUiState.Error(
-                    message = "Please select a valid stop",
-                    fromError = "Please select a valid stop"
-                )
-                return@launch
-            }
-
-            if (!toValid) {
-                _uiState.value = HomeUiState.Error(
-                    message = "Please select a valid stop",
-                    toError = "Please select a valid stop"
-                )
-                return@launch
-            }
-
-            if (from.equals(to, ignoreCase = true)) {
-                _uiState.value = HomeUiState.Error(
-                    message = "Origin and destination cannot be the same",
-                    toError = "Origin and destination cannot be the same"
-                )
-                return@launch
-            }
-
-            _uiState.value = HomeUiState.Loading
-
-            // Match case-insensitive exact stop name from distinct list
-            val matchedFrom = availableStops.first { it.equals(from, ignoreCase = true) }
-            val matchedTo = availableStops.first { it.equals(to, ignoreCase = true) }
-
-            repository.findSegments(matchedFrom, matchedTo).collectLatest { results ->
-                val sorted = results.sortedWith(
-                    compareBy<SegmentResult> { it.companyName }.thenBy { it.segmentFare }
-                )
-
-                if (sorted.isEmpty()) {
-                    _uiState.value = HomeUiState.Empty
-                } else {
-                    _uiState.value = HomeUiState.Results(sorted)
+                if (!fromValid) {
+                    _uiState.value = HomeUiState.Error(
+                        message = "Please select a valid stop",
+                        fromError = "Please select a valid stop"
+                    )
+                    return@launch
                 }
+
+                if (!toValid) {
+                    _uiState.value = HomeUiState.Error(
+                        message = "Please select a valid stop",
+                        toError = "Please select a valid stop"
+                    )
+                    return@launch
+                }
+
+                if (from.equals(to, ignoreCase = true)) {
+                    _uiState.value = HomeUiState.Error(
+                        message = "Origin and destination cannot be the same",
+                        toError = "Origin and destination cannot be the same"
+                    )
+                    return@launch
+                }
+
+                _uiState.value = HomeUiState.Loading
+
+                // Match case-insensitive exact stop name from distinct list
+                val matchedFrom = availableStops.first { it.equals(from, ignoreCase = true) }
+                val matchedTo = availableStops.first { it.equals(to, ignoreCase = true) }
+
+                repository.findSegments(matchedFrom, matchedTo).collectLatest { results ->
+                    val sorted = results.sortedWith(
+                        compareBy<SegmentResult> { it.companyName }.thenBy { it.segmentFare }
+                    )
+
+                    if (sorted.isEmpty()) {
+                        _uiState.value = HomeUiState.Empty
+                    } else {
+                        _uiState.value = HomeUiState.Results(sorted)
+                    }
+                }
+            } catch (e: Exception) {
+                _uiState.value = HomeUiState.Error(
+                    message = e.localizedMessage ?: "Error searching routes"
+                )
             }
         }
     }

@@ -91,6 +91,7 @@ class AccountFragment : Fragment() {
             .setTitle("Log out")
             .setMessage("Log out of NasBus?")
             .setPositiveButton("Yes") { _, _ ->
+                binding.btnLogout.isEnabled = false // Disable submit button while logging out
                 viewModel.logout()
                 navigateToLogin()
             }

@@ -1,6 +1,8 @@
 package com.nasbus.app.ui.auth
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -55,11 +57,43 @@ class RegisterFragment : Fragment() {
                 true
             } else false
         }
+
+        // Clear error on user edit without disabling ViewModel state
+        binding.etUsername.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                binding.tilUsername.error = null
+            }
+            override fun afterTextChanged(s: Editable?) {}
+        })
+
+        binding.etEmail.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                binding.tilEmail.error = null
+            }
+            override fun afterTextChanged(s: Editable?) {}
+        })
+
+        binding.etPassword.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                binding.tilPassword.error = null
+            }
+            override fun afterTextChanged(s: Editable?) {}
+        })
+
+        binding.etConfirmPassword.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                binding.tilConfirmPassword.error = null
+            }
+            override fun afterTextChanged(s: Editable?) {}
+        })
     }
 
     private fun performRegister() {
         binding.root.hideKeyboard()
-        clearErrors()
 
         val username = binding.etUsername.text.toString()
         val email = binding.etEmail.text.toString()
@@ -92,18 +126,11 @@ class RegisterFragment : Fragment() {
                             binding.progressBar.visibility = View.GONE
                             binding.btnRegister.isEnabled = true
 
-                            if (state.usernameError != null) {
-                                binding.tilUsername.error = state.usernameError
-                            }
-                            if (state.emailError != null) {
-                                binding.tilEmail.error = state.emailError
-                            }
-                            if (state.passwordError != null) {
-                                binding.tilPassword.error = state.passwordError
-                            }
-                            if (state.confirmPasswordError != null) {
-                                binding.tilConfirmPassword.error = state.confirmPasswordError
-                            }
+                            binding.tilUsername.error = state.usernameError
+                            binding.tilEmail.error = state.emailError
+                            binding.tilPassword.error = state.passwordError
+                            binding.tilConfirmPassword.error = state.confirmPasswordError
+
                             if (state.genericError != null) {
                                 Toast.makeText(requireContext(), state.genericError, Toast.LENGTH_SHORT).show()
                             }
@@ -112,13 +139,6 @@ class RegisterFragment : Fragment() {
                 }
             }
         }
-    }
-
-    private fun clearErrors() {
-        binding.tilUsername.error = null
-        binding.tilEmail.error = null
-        binding.tilPassword.error = null
-        binding.tilConfirmPassword.error = null
     }
 
     private fun navigateToHome() {

@@ -1,6 +1,8 @@
 package com.nasbus.app.ui.auth
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -64,11 +66,27 @@ class LoginFragment : Fragment() {
                 true
             } else false
         }
+
+        // Clear error as soon as user edits field
+        binding.etIdentifier.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                binding.tilIdentifier.error = null
+            }
+            override fun afterTextChanged(s: Editable?) {}
+        })
+
+        binding.etPassword.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                binding.tilPassword.error = null
+            }
+            override fun afterTextChanged(s: Editable?) {}
+        })
     }
 
     private fun performLogin() {
         binding.root.hideKeyboard()
-        clearErrors()
 
         val identifier = binding.etIdentifier.text.toString()
         val password = binding.etPassword.text.toString()
@@ -99,12 +117,9 @@ class LoginFragment : Fragment() {
                             binding.progressBar.visibility = View.GONE
                             binding.btnLogin.isEnabled = true
 
-                            if (state.emailError != null) {
-                                binding.tilIdentifier.error = state.emailError
-                            }
-                            if (state.passwordError != null) {
-                                binding.tilPassword.error = state.passwordError
-                            }
+                            binding.tilIdentifier.error = state.emailError
+                            binding.tilPassword.error = state.passwordError
+
                             if (state.genericError != null) {
                                 Toast.makeText(requireContext(), state.genericError, Toast.LENGTH_SHORT).show()
                             }
@@ -113,11 +128,6 @@ class LoginFragment : Fragment() {
                 }
             }
         }
-    }
-
-    private fun clearErrors() {
-        binding.tilIdentifier.error = null
-        binding.tilPassword.error = null
     }
 
     private fun navigateToHome() {
